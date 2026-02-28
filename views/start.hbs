@@ -1,11 +1,55 @@
 {{> menu}}
 
 <section class="ui center aligned middle aligned segment">
-  
-  <h2>Assignment One Starter App</h2>
+  <h2>Welcome to tmy Fish Thank App!</h2>
+    <p>
+      App description will be here
+    </p>
 
-  <p>
-    You can use this start view (along with the matching start controller and start route) as the starting point for your "welcome" view (i.e. your app's homepage). Read the assignment spec to see what other views you should add.
-  </p>
+<img src = "/catFish.png" class = "ui centered image">
+
+  <div class="ui three statistics" style="margin-top: 4em;">
+    
+  {{#with info}}
+     
+    <div class="statistic">
+      <div class="value">
+        <i class="anchor icon"></i>
+      </div>
+      <div class="label">
+        App Title: <br>
+        {{appTitle}}
+      </div>
+    </div>
+    
+
+     
+    <div class="statistic">
+      <div class="value">
+        <i class="map pin icon"></i> 
+      </div>
+      <div class="label">
+        Made in: <br>
+        {{location}}
+      </div>
+    </div> 
+	
+    <div class="statistic">
+      <div class="value">
+        <i class="smile outline icon"></i>
+      </div>
+      <div class="label">
+        Created by: <br>
+        {{creators.0.name}}
+      </div>
+    </div>
+	
+  
+	
+  {{/with}}
+  
+</div>
+
+
 
 </section>
