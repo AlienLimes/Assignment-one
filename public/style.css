@@ -12,3 +12,20 @@ body {
   margin: 2em;
   background-color: lightgrey;
 }
+
+
+
+.custom-footer {
+  background-color: rgb(23, 1, 120);
+  color: white;
+  margin-top: 2rem;
+}
+
+.custom-footer .ui.container {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.custom-footer p {
+  margin: 0;
+}

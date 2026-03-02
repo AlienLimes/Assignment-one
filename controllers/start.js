@@ -9,7 +9,9 @@ const start = {
     
     const viewData = {
       title: "Fish Tank App",
-      info: appStore.getAppInfo()
+      info: appStore.getAppInfo(),
+      //updated year
+      currentYear: new Date().getFullYear() 
     };
     
     response.render('start', viewData);   
