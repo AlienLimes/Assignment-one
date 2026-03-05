@@ -8,6 +8,7 @@ const about = {
     
     const viewData = {
       title: "About Fish App",
+      currentYear: new Date().getFullYear() 
     };
     
     response.render('about', viewData);   

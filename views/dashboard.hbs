@@ -1,0 +1,35 @@
+{{> menu id="dashboard"}}
+
+<section class="ui left aligned middle aligned segment">
+  
+  <h2>Fish App Dashboard</h2>
+  
+  {{#unless fish}}
+    <h3 class="ui message">
+      Start adding your fishtank!
+    </h3>
+  {{/unless}}
+
+  {{#each fish}}
+    <section class="ui left aligned middle aligned segment">
+
+      <h3 class="ui header">
+        {{title}}
+      </h3>
+      {{#if fish}}
+        <p>Total Fish: {{fish.length}}</p>
+      {{else}}
+        <p>Empty fishtank</p>
+      {{/if}}
+      
+      <a href="/fish/{{id}}"> 
+        <i class="folder open black outline icon" style="visibility: visible;"></i> 
+      </a>
+
+    </section>
+  {{/each}}
+
+</section>
+
+
+

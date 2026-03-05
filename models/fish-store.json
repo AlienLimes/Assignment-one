@@ -1,0 +1,57 @@
+{
+  "fishCollection": [
+    {
+      "id": "01",
+      "title": "something",
+      "fish": [
+        {
+          "id": "04",
+          "name": "Goldie",
+          "species": "Goldfish",
+          "color": "orange"
+        },
+        {
+          "id": "05",
+          "name": "Bubbles",
+          "species": "Betta",
+          "color": "blue"
+        },
+        {
+          "id": "06",
+          "name": "Finley",
+          "species": "Guppy",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "other",
+      "fish": [
+        {
+          "id": "07",
+          "name": "Neo",
+          "species": "Neon Tetra",
+          "color": "blue and red"
+        },
+        {
+          "id": "08",
+          "name": "Ziggy",
+          "species": "Zebra Danio",
+          "color": "striped"
+        },
+        {
+          "id": "09",
+          "name": "Angel",
+          "species": "Angelfish",
+          "color": "silver"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "empty",
+      "fish": []
+    }
+  ]
+}
