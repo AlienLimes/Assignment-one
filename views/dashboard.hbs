@@ -2,14 +2,17 @@
 
 <section class="ui left aligned middle aligned segment">
   
-  <h2>Fish App Dashboard/collection overview/ categories listed, not actual contents</h2>
+
+<div class="aquarium">
+
+  <h2>Keep up to date about what is in your Fish tank</h2>
   
   {{#unless fishtank}}
-    <h3 class="ui message">
+   <h3 class="ui  orange message">
       
         <i class="fish icon"></i> 
      
-      Start adding your fishtank!
+      Start adding your fishtank! COMING SOON
 
     </h3>
   {{/unless}}
@@ -27,14 +30,27 @@
         <p>Empty fishtank</p>
       {{/if}}
       
-      <a href="/fishtank/{{id}}"> 
-        <i class="folder open black outline icon" style="visibility: visible;"></i> 
-      </a>
+                <a href="/fishtank/{{id}}" class="ui teal button">
+                <i class="fish icon"></i> View Tank
+</a>
 
     </section>
   {{/each}}
 
+  </div>
+
+
+  <div class="circle bubble-1"></div>
+  <div class="circle bubble-2"></div>
+  <div class="circle bubble-3"></div>
+  <div class="circle bubble-4"></div>
+  <div class="circle bubble-5"></div>
+  <div class="circle bubble-6"></div>
+  <div class="circle bubble-7"></div>
+  <div class="circle bubble-8"></div>
+
+
 </section>
 
 
-
+{{> footer}}

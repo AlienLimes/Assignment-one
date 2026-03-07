@@ -3,6 +3,22 @@ html {
   font-size: 16px;
 }
 
+
+.ui.menu .ui.header.item a {
+  color: #ffd93d !important; 
+}
+.ui.menu {
+  background: linear-gradient(160deg, #0a4a6e 0%, #1dbfbf 100%);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.ui.menu .item:hover {
+  background-color: #1dbfbf !important;
+  color: white !important;
+}
+
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -10,16 +26,34 @@ html {
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
-  background-color: lightgrey;
+  background-color: #49cbcb;
+  color: #1a1a2e;
+}
+
+.ui.centered.image {
+  border-radius: 12px;  
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* footer style */
 
 .custom-footer {
-  background-color: rgb(23, 1, 120);
+  background-color: #0a4a6e;
   color: white;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
+
+
 
 .custom-footer .ui.container {
   padding: 1rem 0;
@@ -28,4 +62,174 @@ body {
 
 .custom-footer p {
   margin: 0;
+}
+
+
+
+
+
+
+.ui.segment {
+  position: relative;
+  overflow: hidden;
+   background: linear-gradient(160deg, #0a4a6e 0%, #1dbfbf 100%);
+}
+
+/* bubble animation for background  based on https://bbbootstrap.com/snippets/bubble-background-animation-11329969 */
+
+ /*  bubble shape */
+.circle {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  /* background: rgba(11, 191, 191, 0.15); */
+  background: rgba(245, 152, 2, 0.15);
+  
+  animation: bubbleUp linear infinite;
+  pointer-events: none;
+  
+}
+
+
+
+@keyframes bubbleUp {
+  from {
+    transform: translateY(0);
+    opacity: 4;
+  }
+  to {
+    transform: translateY(-700px);
+    opacity: 20;
+  }
+}
+
+  /* Bubble 1 */
+  .bubble-1 {
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 7s;
+  animation-delay: 0s;
+ }
+
+/* Bubble 2 */
+ .bubble-2 {
+  left: 12%;
+  width: 10px;
+  height: 10px;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+
+/* Bubble 3 */
+.bubble-3 {
+  left: 25%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+/*Bubble 4 */
+ .bubble-4 {
+  left: 40%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 11s;
+  animation-delay: 0.5s;
+}
+
+/* Bubble-5 */
+.bubble-5 {
+  left: 55%;
+  width: 8px;
+  height: 8px;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  }
+
+/*Bubble 6 */
+.bubble-6 {
+  left: 68%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 10s;
+  animation-delay: 1.5s;
+}
+
+/* Bubble 7 */
+.bubble-7 {
+  left: 80%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 9s;
+  animation-delay: 2.5s;
+}
+
+/* Bubble 8 */
+.bubble-8 {
+  left: 92%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+
+
+
+
+
+
+
+
+    /* icon design start page */
+
+    
+.ui.three.statistics {
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 12px;                
+  padding: 24px;                     
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+.ui.statistics .statistic .value {
+  color: #ffd93d !important;
+  font-size: 20px !important;
+}
+
+
+
+
+
+
+.ui.statistics .statistic .label {
+  color: white !important;
+  font-size: 14px !important;
+  text-transform: none !important;  
+  font-family: "Nunito", arial, sans-serif !important;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+
+
+.ui.statistics .statistic .label strong {
+  color: #ffd93d !important;  
+  font-size: 15px !important;
+  display: block;             
+}
+
+
+
+/* list header */
+
+.ui.table thead tr th {
+  background-color: #0a4a6e !important;
+  color: #ffd93d !important;   
+}
+
+.ui.table tbody tr td {
+  background-color:#ffd93d !important;
+  color: #1a1a2e !important;
 }

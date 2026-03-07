@@ -1,12 +1,29 @@
 {{> menu}}
 
 <section class="ui center aligned middle aligned segment">
-  <h2>Welcome to tmy Fish Thank App!</h2>
-    <p>
-      App description will be here/outline/purpose of my app
-    </p>
 
-<img src = "/catFish.png" class = "ui centered image">
+
+ <div class="aquarium">
+
+  <h2>Welcome to my Fish Tank App!</h2>
+    <p>
+      Keeping Fish is a hobby of consistency.
+      <br> Fish Tank App helps you maintain  that consistency by tracking the essential tasks.
+      <br> Fish type, Fish color, Tank status, ammonia and other parameter levels.
+    </p>
+    <br>
+
+
+<img src = "/catFish.png" class = "ui centered image" alt="Catfish illustration" >
+
+
+<div style="margin-top: 32px;">
+  <a href="/about" class="ui large yellow button">
+    <i class="info circle icon"></i>
+    Learn More About Us
+
+    </a>
+</div>
 
   <div class="ui three statistics" style="margin-top: 4em;">
     
@@ -18,7 +35,7 @@
       </div>
       <div class="label">
         App Title: <br>
-        {{appTitle}}
+       <strong>{{appTitle}}</strong> 
       </div>
     </div>
     
@@ -30,7 +47,7 @@
       </div>
       <div class="label">
         Made in: <br>
-        {{location}}
+        <strong>{{location}}</strong>
       </div>
     </div> 
 	
@@ -40,7 +57,7 @@
       </div>
       <div class="label">
         Created by: <br>
-        {{creators.0.name}}
+        <strong>{{creators.0.name}}</strong>
       </div>
     </div>
 	
@@ -51,10 +68,17 @@
 </div>
 
 
+</div>
 
-  <div style="margin-top: 2rem;">
-    <a href="/about" class="ui blue button">Learn More About Us</a>
-  </div>
+ 
+  <div class="circle bubble-1"></div>
+  <div class="circle bubble-2"></div>
+  <div class="circle bubble-3"></div>
+  <div class="circle bubble-4"></div>
+  <div class="circle bubble-5"></div>
+  <div class="circle bubble-6"></div>
+  <div class="circle bubble-7"></div>
+  <div class="circle bubble-8"></div>
 
 
 

@@ -2,55 +2,70 @@
   "fishCollection": [
     {
       "id": "01",
-      "title": "something",
+      "title": "Main Tank",
       "fish": [
         {
           "id": "04",
           "name": "Goldie",
           "species": "Goldfish",
-          "color": "orange"
+          "color": "orange",
+          "gender": "Female"
         },
         {
           "id": "05",
           "name": "Bubbles",
           "species": "Betta",
-          "color": "blue"
+          "color": "blue",
+          "gender": "Male"
         },
         {
           "id": "06",
-          "name": "Finley",
-          "species": "Guppy",
-          "color": "red"
+          "name": "Pocok",
+          "species": "Mollie",
+          "color": "red",
+          "gender": "Female"
         }
       ]
     },
     {
       "id": "02",
-      "title": "other",
+      "title": "Quarantine Fish Tank",
       "fish": [
         {
           "id": "07",
           "name": "Neo",
           "species": "Neon Tetra",
-          "color": "blue and red"
+          "color": "blue and red",
+          "gender": "FemalUnknown"
         },
         {
           "id": "08",
-          "name": "Ziggy",
-          "species": "Zebra Danio",
-          "color": "striped"
+          "name": "Bully",
+          "species": "Mollie",
+          "color": "striped",
+          "gender": "Male"
         },
         {
           "id": "09",
-          "name": "Angel",
-          "species": "Angelfish",
-          "color": "silver"
+          "name": "Csigusz",
+          "species": "Assasin snail",
+          "color": "Brown",
+          "gender": "Unknown"
+
+        },
+                {
+          "id": "10",
+          "name": "Cherry",
+          "species": "Cherry Shrimp",
+          "color": "Red",
+          "gender": "Unknown"
+
         }
       ]
     },
     {
       "id": "03",
-      "title": "empty",
+      "title": "Future plans",
       "fish": []
     }
   ]
