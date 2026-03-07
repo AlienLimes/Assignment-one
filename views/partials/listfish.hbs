@@ -1,0 +1,33 @@
+{{#if singleFishtank.fish}}
+
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>Fish</th>
+        <th>Species</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleFishtank.fish}}
+        <tr>
+          <td>
+            {{name}}
+          </td>
+          <td>
+            {{species}}
+          </td>
+          <td>
+            {{color}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+    <h3 class="ui message">
+      Empty fishtank!
+    </h3>
+
+{{/if}}

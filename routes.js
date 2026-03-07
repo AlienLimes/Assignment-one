@@ -11,11 +11,15 @@ import start from './controllers/start.js';
 import about from './controllers/about.js'; 
 import dashboard from './controllers/dashboard.js'; 
 
+import fishtank from './controllers/fishtank.js';
+
+
 
 
 
 router.get('/', start.createView);
 router.get('/about', about.createView); 
 router.get('/dashboard', dashboard.createView);
+router.get('/fishtank/:id', fishtank.createView);
 
 export default router;
