@@ -1,0 +1,55 @@
+{
+  "fishCollection": [
+    {
+      "id":"01",
+      "cleaning": [
+        {
+        "date": "2026-02-01",
+        "ammonia": "Yellow",
+        "tempeture": 25.3,
+        "phlevel": 2.5
+      },
+              {
+        "date": "2026-02-12",
+        "ammonia": "Yellow",
+        "tempeture": 26.3,
+        "phlevel": 2.7
+      },
+                 {
+        "date": "2026-03-01",
+        "ammonia": "Orange",
+        "tempeture": 25.7,
+        "phlevel": 2.0
+      },
+                 {
+        "date": "2026-03-14",
+        "ammonia": "Yellow",
+        "tempeture": 24.3,
+        "phlevel": 2.4
+      }
+      ]
+    },
+        {
+      "id":"02",
+      "cleaning": [
+        {
+        "date": "2026-01-04",
+        "ammonia": "Orange",
+        "tempeture": 25.0,
+        "phlevel": 2.5
+      }
+      ]
+    },
+            {
+      "id":"03",
+      "cleaning": [
+        {
+        "date": "none",
+        "ammonia": "-",
+        "tempeture": 0,
+        "phlevel": 0
+      }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,14 @@
 {{#if singleFishtank.fish}}
 
-  <table class="ui unstackable striped table">
+
+
+
+
+  <table class="ui unstackable striped table" >
     <thead>
       <tr>
         
-        <th>Fish <i class="fa-solid fa-fish"></i></th>
+        <th>Fish Name <i class="fa-solid fa-fish"></i></th>
         <th>Species <i class="fa-solid fa-address-card"></i> </th>
         <th>Color <i class="fa-solid fa-palette"></i>  </th>
         <th>Gender <i class="fa-solid fa-mars-and-venus"></i> </th>
@@ -25,10 +29,15 @@
            <td>
             {{gender}}
           </td>
+          
+         
         </tr>
-      {{/each}}
+      {{/each}} 
+      
     </tbody>
   </table>
+
+
 
   {{else}}
     <h3 class="ui message">
@@ -36,3 +45,42 @@
     </h3>
 
 {{/if}}
+
+
+  {{#if singleFishtankCleaning.cleaning}}
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>Cleaning Date <i class="fa-solid fa-broom"></i></th>
+        <th>Ammonia Level <i class="fa-solid fa-address-card"></i> </th>
+        <th>Tempeture <i class="fa-solid fa-address-card"></i> </th>
+         <th>PH Level <i class="fa-solid fa-address-card"></i> </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleFishtankCleaning.cleaning}}
+        <tr>
+          <td>
+          
+            {{date}}
+          </td>
+          <td>
+            {{ammonia}}
+          </td>
+            <td>
+            {{tempeture}} Celsius
+          </td>
+           <td>
+            {{phlevel}}
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td>No cleaning records found</td>
+        </tr>
+      {{/each}} 
+    </tbody>
+  </table>
+{{/if}}
+
+
