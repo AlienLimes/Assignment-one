@@ -1,11 +1,19 @@
-# Assignment 1 Starter Project
+# Assignment 1 Krisztina Molnar 20111337
 
-Use this starter project as the basis for Assignment One
+Fish Tank App
 
-You should: 
+I created this web app because I did not like the way I recored the maintanace of my fish tank, manually with pen and paper.
+In this app, I can record all the maintanace details and content of the fish tank.
+Can have more tanks with different setup.
 
-- Download this project from GitHub as a ZIP file
-- Complete the CA1 starter lab to set up your own GitHub repo for Assignment 1
-- Edit the files with your own content
+So far the application only reads data from a static json file.
 
-# Assignment-one
+
+
+# Technolgies
+
+- Node Js
+- Express
+- LowDB
+- Handlebars
+- css
