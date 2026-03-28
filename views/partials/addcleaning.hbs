@@ -1,0 +1,21 @@
+<form class="ui stacked segment form" action="/fishtank/{{@root.singleFishtank.id}}/addcleaning" method="POST">
+  <div class="four fields">
+    <div class="field">
+      <label>Cleaning Date</label>
+      <input type="date" name="date" required title="Please include a valid Date" placeholder="Cleaning Date">
+    </div>
+    <div class="field">
+      <label>Ammonia Level</label>
+      <input type="text" name="ammonia" required title="Please include a valid Ammonia Level" placeholder="Ammonia Level">
+    </div>
+    <div class="field">
+      <label>Temperature</label>
+      <input type="number" step="0.1" name="tempeture" required title="Please include a valid Temperature" placeholder="Temperature">
+    </div>
+    <div class="field">
+      <label>PH Level</label>
+      <input type="number" step="0.1" name="phlevel" required title="Please include a valid PH Level" placeholder="PH Level">
+    </div>
+  </div>
+  <button class="ui teal submit button">Add Cleaning Record</button>
+</form>

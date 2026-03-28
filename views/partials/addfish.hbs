@@ -1,0 +1,25 @@
+<form class="ui stacked segment form" action="/fishtank/{{id}}/addfish" method="POST">
+  <div class="four fields">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" autofocus required title = "Please include a valid Name"
+	  placeholder="Name">
+    </div>
+    <div class="field">
+      <label>Species</label>
+      <input type="text" name="species" required title = "Please include a valid Species"
+	  placeholder="Species"  >
+    </div>
+      <div class="field">
+      <label>Color</label>
+      <input type="text" name="color" required title = "Please include a valid Color"
+	  placeholder="Color"  >
+    </div>
+      <div class="field">
+      <label>Gender</label>
+      <input type="text" name="gender" required title = "Please include a valid Gender"
+	  placeholder="Gender"  >
+    </div>
+  </div>
+  <button class="ui teal submit button">Add Fish</button>
+</form>

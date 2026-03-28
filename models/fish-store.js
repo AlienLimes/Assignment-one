@@ -17,6 +17,11 @@ getFishtank(id) {
     return this.store.findOneBy(this.collection, (fishtank => fishtank.id === id));
 },
 
+addFish(id, fish) {
+    this.store.addItem(this.collection, id, this.array, fish);
+},
+
+
 
 };
 

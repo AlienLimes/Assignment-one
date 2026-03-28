@@ -1,19 +1,33 @@
 
 {{> menu}}
 
+{{#with singleFishtank}}
 
-
-<section class="ui center aligned middle aligned scrolling segment" style="height: auto; max-height: 500px; overflow-y: auto;">
-
+<section class="ui center aligned middle aligned segment">
   <h2 class="ui header">
-    {{singlefish.title}}
+    {{name}}
   </h2>
-  
+
+  {{> addfish}}
   {{> listfish}}
 
-
-   <a href="/dashboard" class="ui teal button">
-  <i class="arrow left icon"></i> Back to Dashboard
-    </a>
-  
 </section>
+
+<section class="ui center aligned middle aligned segment">
+  {{> addcleaning}}
+  {{> listcleaning}}
+
+  <div class="ui center aligned segment">
+  <a href="/dashboard" class="ui teal button">
+    <i class="arrow left icon"></i> Back to Dashboard
+  </a>
+  </div>
+
+
+</section>
+
+{{/with}}
+
+
+
+{{> footer}}

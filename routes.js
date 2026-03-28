@@ -22,4 +22,10 @@ router.get('/about', about.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/fishtank/:id', fishtank.createView);
 
+//new fish
+router.post('/fishtank/:id/addfish', fishtank.addFish);
+
+
+//new cleaning
+router.post('/fishtank/:id/addcleaning', fishtank.addCleaning);
 export default router;

@@ -11,7 +11,9 @@ const dashboard = {
 
     const viewData = {
       title: "Fish App Dashboard",
-      fish: fishStore.getAllFish()
+      fish: fishStore.getAllFish(),
+       //updated year
+      currentYear: new Date().getFullYear(), 
     };
     
     logger.debug(viewData.fish);

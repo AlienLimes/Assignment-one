@@ -1,0 +1,26 @@
+{{#if cleaning}}
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>Cleaning Date <i class="fa-solid fa-broom"></i></th>
+        <th>Ammonia Level <i class="fa-solid fa-address-card"></i></th>
+        <th>Tempeture <i class="fa-solid fa-address-card"></i></th>
+        <th>PH Level <i class="fa-solid fa-address-card"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cleaning}}
+        <tr>
+          <td>{{date}}</td>
+          <td>{{ammonia}}</td>
+          <td>{{tempeture}} Celsius</td>
+          <td>{{phlevel}}</td>
+        </tr>
+      {{else}}
+        <tr>
+          <td>No cleaning records found</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}
