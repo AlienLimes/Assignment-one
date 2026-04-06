@@ -14,8 +14,9 @@ const fishtank = {
     const cleaningData = cleanStore.getFishtank(fishtankId);
 
     // attach cleaning directly onto the fishtank object
-    fishtank.cleaning = cleaningData.cleaning;
-
+    // fishtank.cleaning = cleaningData.cleaning;
+      // fishtank.cleaning = cleaningData ? cleaningData.cleaning : [];
+      fishtank.cleaning = cleaningData.cleaning;
     logger.debug(`Fishtank id = ${fishtankId}`);
 
     // this creates list that can be connected to the view
@@ -49,6 +50,7 @@ const fishtank = {
   addCleaning(request, response) {
     const fishtankId = request.params.id;
     const newCleaning = {
+      id: uuidv4(),
       date: request.body.date,
       ammonia: request.body.ammonia,
       tempeture: request.body.tempeture,
@@ -57,6 +59,23 @@ const fishtank = {
     cleanStore.addCleaning(fishtankId, newCleaning);
     response.redirect('/fishtank/' + fishtankId);
   },
+
+  deleteFish(request, response) {
+    const fishtankId = request.params.id;
+    const fishId = request.params.fishid;
+    logger.debug(`Deleting Fish  ${fishId} from Fishtank ${fishtankId}`);
+   fishStore.removeFish(fishtankId, fishId);
+    response.redirect('/fishtank/' + fishtankId);
+},
+
+
+deleteCleaning(request, response) {
+    const fishtankId = request.params.id;
+    const cleaningId = request.params.cleaningid;
+    logger.debug(`Deleting Cleaning ${cleaningId} from Fishtank ${fishtankId}`); 
+    cleanStore.removeCleaning(fishtankId, cleaningId);
+    response.redirect('/fishtank/' + fishtankId);
+}
 
 };
 

@@ -8,6 +8,7 @@
         <th>Species <i class="fa-solid fa-address-card"></i></th>
         <th>Color <i class="fa-solid fa-palette"></i></th>
         <th>Gender <i class="fa-solid fa-mars-and-venus"></i></th>
+        <th>Actions <i class="fa-solid fa-trash"></i></th>
       </tr>
     </thead>
     <tbody>
@@ -17,7 +18,22 @@
           <td>{{species}}</td>
           <td>{{color}}</td>
           <td>{{gender}}</td>
+
+    <td class="center aligned">
+     <a href="/fishtank/{{../id}}/deletefish/{{id}}" 
+	        title="Delete fish">
+            <i class="ui black trash icon"></i>
+      </a>
+       </td>
+
+
+
         </tr>
+
+ 
+
+
+
       {{/each}}
     </tbody>
   </table>

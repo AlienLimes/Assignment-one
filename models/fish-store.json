@@ -10,88 +10,53 @@
           "species": "Goldfish",
           "color": "orange",
           "gender": "Female"
-        },
-        {
-          "id": "05",
-          "name": "Bubbles",
-          "species": "Betta",
-          "color": "blue",
-          "gender": "Male"
-        },
-        {
-          "id": "06",
-          "name": "Pocok",
-          "species": "Mollie",
-          "color": "red",
-          "gender": "Female"
-        },
-        {
-          "id": "bb5304ab-3728-4cef-a1c8-4f36d6eda3b0",
-          "name": "pocok",
-          "species": "molli",
-          "color": "yellow",
-          "gender": "female"
-        },
-        {
-          "id": "9c369c47-3937-40bd-9152-5f3dbaec6ad1",
-          "name": "teri",
-          "species": "pockos",
-          "color": "red",
-          "gender": "female"
-        },
-        {
-          "id": "a9516651-4e06-4fab-a302-7b63f0b04019",
-          "name": "red",
-          "species": "molli",
-          "color": "red",
-          "gender": "female"
-        },
-        {
-          "id": "001ff7ac-1e89-447a-aa62-a6501a3677e7",
-          "name": "red",
-          "species": "molli",
-          "color": "red",
-          "gender": "female"
         }
       ],
       "cleaning": [
         {
+          "id": "c01",
           "date": "2026-02-01",
           "ammonia": "Yellow",
           "tempeture": 25.3,
           "phlevel": 2.5
         },
         {
+          "id": "c02",
           "date": "2026-02-12",
           "ammonia": "Yellow",
           "tempeture": 26.3,
           "phlevel": 2.7
         },
         {
+          "id": "c03",
           "date": "2026-03-01",
           "ammonia": "Orange",
           "tempeture": 25.7,
           "phlevel": 2
         },
         {
+          "id": "c04",
           "date": "2026-03-14",
           "ammonia": "Yellow",
           "tempeture": 24.3,
           "phlevel": 2.4
         },
         {
+          "id": "c05",
           "date": "2026-03-19",
           "ammonia": "red",
           "tempeture": "0.5",
           "phlevel": "0.4"
         },
         {
+          "id": "c06",
           "date": "2026-03-03",
           "ammonia": "red",
           "tempeture": "1",
           "phlevel": "1"
         },
         {
+          "id": "c07",
           "date": "2026-03-30",
           "ammonia": "green",
           "tempeture": "0.4",
@@ -123,23 +88,9 @@
           "species": "Assasin snail",
           "color": "Brown",
           "gender": "Unknown"
-        },
-        {
-          "id": "10",
-          "name": "Cherry",
-          "species": "Cherry Shrimp",
-          "color": "Red",
-          "gender": "Unknown"
         }
       ],
-      "cleaning": [
-        {
-          "date": "2026-01-04",
-          "ammonia": "Orange",
-          "tempeture": 25,
-          "phlevel": 2.5
-        }
-      ]
+      "cleaning": []
     },
     {
       "id": "03",
@@ -165,35 +116,58 @@
           "species": "plecko",
           "color": "white",
           "gender": "female"
-        },
-        {
-          "id": "3c1433d7-feb5-4b94-98f2-276827d6293e",
-          "name": "popsi",
-          "species": "shark",
-          "color": "grey",
-          "gender": "male"
         }
       ],
       "cleaning": [
         {
+          "id": "c10",
           "date": "none",
           "ammonia": "-",
           "tempeture": 0,
           "phlevel": 0
         },
         {
+          "id": "c11",
           "date": "2026-03-11",
           "ammonia": "green",
           "tempeture": "0.1",
           "phlevel": "0.1"
         },
         {
+          "id": "c12",
           "date": "2026-03-24",
           "ammonia": "green",
           "tempeture": "0.8",
           "phlevel": "0.9"
+        },
+        {
+          "id": "00d16335-2e55-4915-a1bf-cfedd5686102",
+          "date": "2026-04-09",
+          "ammonia": "green",
+          "tempeture": "2",
+          "phlevel": "3"
         }
       ]
+    },
+    {
+      "id": "3a8e3657-9fcc-4278-b6cc-f804dfd80e6a",
+      "title": "new tank",
+      "fish": [
+        {
+          "id": "883059ad-166e-4706-93e6-06c420c2446d",
+          "name": "new fish",
+          "species": "new species",
+          "color": "pink",
+          "gender": "female"
+        }
+      ],
+      "cleaning": []
+    },
+    {
+      "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",
+      "title": "maci",
+      "fish": [],
+      "cleaning": []
     }
   ]
 }

@@ -6,6 +6,7 @@
         <th>Ammonia Level <i class="fa-solid fa-address-card"></i></th>
         <th>Tempeture <i class="fa-solid fa-address-card"></i></th>
         <th>PH Level <i class="fa-solid fa-address-card"></i></th>
+         <th>Actions <i class="fa-solid fa-trash"></i></th>
       </tr>
     </thead>
     <tbody>
@@ -15,6 +16,15 @@
           <td>{{ammonia}}</td>
           <td>{{tempeture}} Celsius</td>
           <td>{{phlevel}}</td>
+
+      <td class="center aligned">
+     <a href="/fishtank/{{../id}}/deletecleaning/{{id}}" 
+	        title="Delete cleaning">
+            <i class="ui black trash icon"></i>
+      </a>
+       </td>
+
+
         </tr>
       {{else}}
         <tr>

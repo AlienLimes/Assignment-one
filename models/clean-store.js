@@ -23,7 +23,12 @@ getFishtank(id) {
     this.store.addItem(this.collection, id, this.array, cleaning);
   },
 
-
+  removeCleaning(id, cleaningId) {
+    this.store.removeItem(this.collection, id, this.array, cleaningId);
+},
+  addFishtank(fishtank) {
+  this.store.addCollection(this.collection, fishtank);
+},
 };
 
 export default cleanStore;

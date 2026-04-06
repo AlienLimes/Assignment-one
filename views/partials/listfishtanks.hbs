@@ -1,0 +1,36 @@
+
+
+<section class="ui left aligned middle aligned segment">
+  <h2>Fish Tank Dashboard</h2>
+
+  {{#unless fishtanks}}
+    <h3 class="ui orange message">
+      <i class="fish icon"></i>
+      Start adding your Fishtanks!
+    </h3>
+  {{/unless}}
+
+  {{#each fishtanks}}
+    <section class="ui left aligned middle aligned segment">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h3 class="ui header">{{title}}</h3>
+          {{#if fish}}
+            <p>Total Fish: {{fish.length}}</p>
+          {{else}}
+            <p>Empty fishtank!</p>
+          {{/if}}
+          <a href="/fishtank/{{id}}">
+            <i class="ui fish black icon"></i>
+          </a>
+        </div>
+        <div>
+          <a href="/dashboard/deletefishtank/{{id}}">
+            <i class="ui trash black icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  {{/each}}
+
+</section>

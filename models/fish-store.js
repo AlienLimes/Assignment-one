@@ -21,6 +21,20 @@ addFish(id, fish) {
     this.store.addItem(this.collection, id, this.array, fish);
 },
 
+removeFish(id, fishId) {
+    this.store.removeItem(this.collection, id, this.array, fishId);
+},
+
+
+addFishtank(fishtank) {
+  this.store.addCollection(this.collection, fishtank);
+},
+  
+
+  removeFishtank(id) {
+  const fishtank = this.getFishtank(id);
+  this.store.removeCollection(this.collection, fishtank);
+},
 
 
 };
