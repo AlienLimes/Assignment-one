@@ -3,6 +3,8 @@
     {
       "id": "01",
       "title": "Main Tank",
+      "date": "2026-02-01",
+      "rating": 5,
       "fish": [
         {
           "id": "04",
@@ -40,33 +42,14 @@
           "ammonia": "Yellow",
           "tempeture": 24.3,
           "phlevel": 2.4
-        },
-        {
-          "id": "c05",
-          "date": "2026-03-19",
-          "ammonia": "red",
-          "tempeture": "0.5",
-          "phlevel": "0.4"
-        },
-        {
-          "id": "c06",
-          "date": "2026-03-03",
-          "ammonia": "red",
-          "tempeture": "1",
-          "phlevel": "1"
-        },
-        {
-          "id": "c07",
-          "date": "2026-03-30",
-          "ammonia": "green",
-          "tempeture": "0.4",
-          "phlevel": "0.4"
         }
       ]
     },
     {
       "id": "02",
       "title": "Quarantine Fish Tank",
+      "date": "2026-01-04",
+      "rating": 3,
       "fish": [
         {
           "id": "07",
@@ -95,6 +78,8 @@
     {
       "id": "03",
       "title": "Future plans",
+      "date": "2026-03-01",
+      "rating": 2,
       "fish": [
         {
           "id": "b8ab36c0-f45a-4dd0-9ae3-dded85877b51",
@@ -152,6 +137,8 @@
     {
       "id": "3a8e3657-9fcc-4278-b6cc-f804dfd80e6a",
       "title": "new tank",
+      "date": "2026-01-01",
+      "rating": 1,
       "fish": [
         {
           "id": "883059ad-166e-4706-93e6-06c420c2446d",
@@ -166,6 +153,24 @@
     {
       "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",
       "title": "maci",
+      "date": "2026-03-01",
+      "rating": 5,
+      "fish": [],
+      "cleaning": []
+    },
+    {
+      "id": "719015c4-0fd9-4f3e-b825-ecb391119360",
+      "title": "po",
+      "date": "2026-04-07T13:06:32.950Z",
+      "rating": 3,
+      "fish": [],
+      "cleaning": []
+    },
+    {
+      "id": "1a2acd6b-e7ce-408a-b394-8c63fe7a15db",
+      "title": "tesztike",
+      "rating": 1,
+      "date": "2026-04-07T13:43:13.279Z",
       "fish": [],
       "cleaning": []
     }

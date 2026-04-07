@@ -14,14 +14,48 @@
     <section class="ui left aligned middle aligned segment">
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <div>
-          <h3 class="ui header">{{title}}</h3>
-          {{#if fish}}
+          <h3 class="ui header">{{uppercase title}}</h3>
+          {{!-- {{#if fish}}
             <p>Total Fish: {{fish.length}}</p>
           {{else}}
             <p>Empty fishtank!</p>
-          {{/if}}
+          {{/if}} --}}
+          <p>
+    <i class="orange fish icon"></i>
+    {{#if fish}}
+        Total Fish:
+        {{fish.length}}
+
+    {{else}}
+        Empty fishtank!
+    {{/if}}
+
+    {{#if date}}
+        <br>
+        <i class="calendar alternate outline icon"></i>
+        Created on <i>{{formatDate date}}</i>
+    {{/if}}
+</p>
+
+         {{#if rating}}
+    <p>
+        <span 
+            class="ui yellow disabled rating" 
+            data-icon="star" 
+            data-rating="{{rating}}" 
+            data-max-rating="5">
+        </span>
+            <span style="color: rgb(247, 231, 2); font-size: 90%; font-style: italic">
+               {{highlightPopular rating}}
+              </span>
+
+    </p>
+   {{/if}}
+
+
           <a href="/fishtank/{{id}}">
-            <i class="ui fish black icon"></i>
+         <i class="teal folder open icon"></i>
+            
           </a>
         </div>
         <div>

@@ -26,10 +26,14 @@ const dashboard = {
   },
      
     addFishtank(request, response) {
-  const id = uuidv4();
+       const timestamp = new Date();
+       const id = uuidv4();
   const newFishtank = {
+    
     id: id,
     title: request.body.title,
+    rating: parseInt(request.body.rating), 
+    date: timestamp,
     fish: [],
     cleaning: [],
   };
