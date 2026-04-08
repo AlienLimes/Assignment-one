@@ -1,0 +1,16 @@
+<tr id="cleaning{{@index}}">
+  <td>{{date}}</td>
+  <td>{{ammonia}}</td>
+  <td>{{tempeture}} Celsius</td>
+  <td>{{phlevel}}</td>
+  <td class="center aligned">
+    <button title="Edit cleaning" class="editSubmit" id="showEditCleaning{{@index}}">
+      <i class="ui pencil icon"></i>
+    </button>
+  </td>
+  <td class="center aligned">
+    <a href="/fishtank/{{fishtankId}}/deletecleaning/{{id}}" title="Delete cleaning">
+      <i class="ui black trash icon"></i>
+    </a>
+  </td>
+</tr>

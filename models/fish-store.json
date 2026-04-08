@@ -12,6 +12,27 @@
           "species": "Goldfish",
           "color": "orange",
           "gender": "Female"
+        },
+        {
+          "id": "7dcbd1de-c875-4583-9473-3ffab7fce663",
+          "name": "Pollen",
+          "species": "Mollie",
+          "color": "grey",
+          "gender": "male"
+        },
+        {
+          "id": "65b83dfb-c0ae-45cc-9e8a-dac084ca9227",
+          "name": "Neo",
+          "species": "Mollie",
+          "color": "red",
+          "gender": "female"
+        },
+        {
+          "id": "c0569d0e-767c-43c3-b8dc-9b6ed76127ee",
+          "name": "Red",
+          "species": "Mollie",
+          "color": "Striped",
+          "gender": "Female"
         }
       ],
       "cleaning": [
@@ -55,22 +76,22 @@
           "id": "07",
           "name": "Neo",
           "species": "Neon Tetra",
-          "color": "blue and red",
-          "gender": "FemalUnknown"
+          "color": "purple",
+          "gender": "male"
         },
         {
           "id": "08",
           "name": "Bully",
           "species": "Mollie",
           "color": "striped",
-          "gender": "Male"
+          "gender": "female"
         },
         {
-          "id": "09",
-          "name": "Csigusz",
-          "species": "Assasin snail",
-          "color": "Brown",
-          "gender": "Unknown"
+          "id": "8b732d83-6e14-4ef1-80ef-d37b4adadb33",
+          "name": "test",
+          "species": "shark",
+          "color": "white",
+          "gender": "female"
         }
       ],
       "cleaning": []
@@ -94,13 +115,6 @@
           "species": "molli",
           "color": "red",
           "gender": "male"
-        },
-        {
-          "id": "9bf0adce-807c-4dee-a3e9-d84d6ddd30e0",
-          "name": "Krisztina",
-          "species": "plecko",
-          "color": "white",
-          "gender": "female"
         }
       ],
       "cleaning": [
@@ -124,53 +138,14 @@
           "ammonia": "green",
           "tempeture": "0.8",
           "phlevel": "0.9"
-        },
-        {
-          "id": "00d16335-2e55-4915-a1bf-cfedd5686102",
-          "date": "2026-04-09",
-          "ammonia": "green",
-          "tempeture": "2",
-          "phlevel": "3"
         }
       ]
-    },
-    {
-      "id": "3a8e3657-9fcc-4278-b6cc-f804dfd80e6a",
-      "title": "new tank",
-      "date": "2026-01-01",
-      "rating": 1,
-      "fish": [
-        {
-          "id": "883059ad-166e-4706-93e6-06c420c2446d",
-          "name": "new fish",
-          "species": "new species",
-          "color": "pink",
-          "gender": "female"
-        }
-      ],
-      "cleaning": []
     },
     {
       "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",
       "title": "maci",
       "date": "2026-03-01",
       "rating": 5,
-      "fish": [],
-      "cleaning": []
-    },
-    {
-      "id": "719015c4-0fd9-4f3e-b825-ecb391119360",
-      "title": "po",
-      "date": "2026-04-07T13:06:32.950Z",
-      "rating": 3,
-      "fish": [],
-      "cleaning": []
-    },
-    {
-      "id": "1a2acd6b-e7ce-408a-b394-8c63fe7a15db",
-      "title": "tesztike",
-      "rating": 1,
-      "date": "2026-04-07T13:43:13.279Z",
       "fish": [],
       "cleaning": []
     }

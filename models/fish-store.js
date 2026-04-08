@@ -35,6 +35,9 @@ addFishtank(fishtank) {
   const fishtank = this.getFishtank(id);
   this.store.removeCollection(this.collection, fishtank);
 },
+   editFish(id, fishId, updatedFish) {
+    this.store.editItem(this.collection, id, fishId, this.array, updatedFish);
+},
 
 
 };

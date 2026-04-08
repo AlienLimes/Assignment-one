@@ -1,38 +1,31 @@
 
-
 {{#if fish}}
   <table class="ui unstackable striped table">
     <thead>
       <tr>
-        <th>Fish Name <i class="fa-solid fa-fish"></i></th>
-        <th>Species <i class="fa-solid fa-address-card"></i></th>
-        <th>Color <i class="fa-solid fa-palette"></i></th>
-        <th>Gender <i class="fa-solid fa-mars-and-venus"></i></th>
-        <th>Actions <i class="fa-solid fa-trash"></i></th>
+        <th class="four wide">Fish Name <i class="fa-solid fa-fish"></i></th>
+        <th class="four wide">Species <i class="fa-solid fa-address-card"></i></th>
+        <th class="two wide">Color <i class="fa-solid fa-palette"></i></th>
+        <th class="two wide">Gender <i class="fa-solid fa-mars-and-venus"></i></th>
+        <th class="two wide"> </th>
+        <th class="two wide"> </th>
       </tr>
     </thead>
     <tbody>
       {{#each fish}}
-        <tr>
-          <td>{{name}}</td>
-          <td>{{species}}</td>
-          <td>{{color}}</td>
-          <td>{{gender}}</td>
+        {{> listOnefish fishtankId=../id }}
+        {{> editfish fishtankId=../id }}
 
-    <td class="center aligned">
-     <a href="/fishtank/{{../id}}/deletefish/{{id}}" 
-	        title="Delete fish">
-            <i class="ui black trash icon"></i>
-      </a>
-       </td>
-
-
-
-        </tr>
-
- 
-
-
+        <script>
+          document.querySelector("#showEdit{{@index}}").addEventListener('click', () => {
+            document.querySelector("#fish{{@index}}").style.display = "none";
+            document.querySelector("#edit{{@index}}").style.display = "table-row";
+          });
+          document.querySelector("#hideEdit{{@index}}").addEventListener('click', () => {
+            document.querySelector("#fish{{@index}}").style.display = "table-row";
+            document.querySelector("#edit{{@index}}").style.display = "none";
+          });
+        </script>
 
       {{/each}}
     </tbody>

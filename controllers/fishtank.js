@@ -4,6 +4,9 @@ import logger from '../utils/logger.js';
 import fishStore from '../models/fish-store.js';
 import cleanStore from '../models/clean-store.js';
 import { v4 as uuidv4 } from 'uuid';
+import capitalize from '../utils/capitalize.js';
+
+
 
 const fishtank = {
   createView(request, response) {
@@ -13,9 +16,6 @@ const fishtank = {
     const fishtank = fishStore.getFishtank(fishtankId);
     const cleaningData = cleanStore.getFishtank(fishtankId);
 
-    // attach cleaning directly onto the fishtank object
-    // fishtank.cleaning = cleaningData.cleaning;
-      // fishtank.cleaning = cleaningData ? cleaningData.cleaning : [];
       fishtank.cleaning = cleaningData.cleaning;
     logger.debug(`Fishtank id = ${fishtankId}`);
 
@@ -38,10 +38,10 @@ const fishtank = {
     const fishtank = fishStore.getFishtank(fishtankId);
     const newFish = {
       id: uuidv4(),
-      name: request.body.name,
-      species: request.body.species,
-      color: request.body.color,
-      gender: request.body.gender,
+       name: capitalize(request.body.name),
+      species: capitalize(request.body.species),
+      color: capitalize(request.body.color),
+      gender: capitalize(request.body.gender),
     };
     fishStore.addFish(fishtankId, newFish);
     response.redirect('/fishtank/' + fishtankId);
@@ -52,7 +52,7 @@ const fishtank = {
     const newCleaning = {
       id: uuidv4(),
       date: request.body.date,
-      ammonia: request.body.ammonia,
+       ammonia: capitalize(request.body.ammonia),
       tempeture: request.body.tempeture,
       phlevel: request.body.phlevel,
     };
@@ -75,7 +75,37 @@ deleteCleaning(request, response) {
     logger.debug(`Deleting Cleaning ${cleaningId} from Fishtank ${fishtankId}`); 
     cleanStore.removeCleaning(fishtankId, cleaningId);
     response.redirect('/fishtank/' + fishtankId);
-}
+},
+   updateFish(request, response) {
+    const fishtankId = request.params.id;
+    const fishId = request.params.fishid;
+    logger.debug("updating fish" + fishId);
+    const updatedFish = {
+      id: fishId,
+       name: capitalize(request.body.name),
+      species: capitalize(request.body.species),
+      color: capitalize(request.body.color),
+      gender: capitalize(request.body.gender),
+    };
+    fishStore.editFish(fishtankId, fishId, updatedFish);
+    response.redirect('/fishtank/' + fishtankId);
+  },
+   
+  updateCleaning(request, response) {
+  const fishtankId = request.params.id;
+  const cleaningId = request.params.cleaningid;
+  logger.debug("updating cleaning" + cleaningId);
+  const updatedCleaning = {
+    id: cleaningId,
+    date: request.body.date,
+     ammonia: capitalize(request.body.ammonia),
+    tempeture: request.body.tempeture,
+    phlevel: request.body.phlevel,
+  };
+  cleanStore.editCleaning(fishtankId, cleaningId, updatedCleaning);
+  response.redirect('/fishtank/' + fishtankId);
+},
+  
 
 };
 

@@ -1,4 +1,4 @@
-{{#if cleaning}}
+{{!-- {{#if cleaning}}
   <table class="ui unstackable striped table">
     <thead>
       <tr>
@@ -30,6 +30,38 @@
         <tr>
           <td>No cleaning records found</td>
         </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}} --}}
+
+{{#if cleaning}}
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th class="four wide">Cleaning Date <i class="fa-solid fa-broom"></i></th>
+        <th class="three wide">Ammonia Level <i class="fa-solid fa-droplet"></i></th>
+        <th class="three wide">Temperature <i class="fa-solid fa-temperature-half"></i></th>
+        <th class="two wide">PH Level <i class="fa-solid fa-flask"></i></th>
+        <th class="two wide"> </th>
+        <th class="two wide"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cleaning}}
+        {{> listOneCleaning fishtankId=../id}}
+        {{> editcleaning fishtankId=../id}}
+
+        <script>
+          document.querySelector("#showEditCleaning{{@index}}").addEventListener('click', () => {
+            document.querySelector("#cleaning{{@index}}").style.display = "none";
+            document.querySelector("#editCleaning{{@index}}").style.display = "table-row";
+          });
+          document.querySelector("#hideEditCleaning{{@index}}").addEventListener('click', () => {
+            document.querySelector("#cleaning{{@index}}").style.display = "table-row";
+            document.querySelector("#editCleaning{{@index}}").style.display = "none";
+          });
+        </script>
       {{/each}}
     </tbody>
   </table>

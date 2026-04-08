@@ -1,0 +1,43 @@
+<form class="ui stacked segment form" method="POST" action="/fishtank/{{fishtankId}}/updatecleaning/{{id}}">
+  <tr class="hide" id="editCleaning{{@index}}">
+    <td>
+      <span class="ui input">
+        <input type="date" name="date" required
+          title="Please include a valid Date"
+          value="{{date}}">
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input type="text" name="ammonia" required
+          title="Please include a valid Ammonia Level"
+          placeholder="Ammonia Level" value="{{ammonia}}">
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input type="number" step="0.1" name="tempeture" required
+          title="Please include a valid Temperature"
+          placeholder="Temperature" value="{{tempeture}}">
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input type="number" step="0.1" name="phlevel" required
+          title="Please include a valid PH Level"
+          placeholder="PH Level" value="{{phlevel}}">
+      </span>
+    </td>
+    <td class="center aligned">
+      <button type="reset" class="editSubmit" id="hideEditCleaning{{@index}}"
+              title="Exit without saving">
+        <i class="ui undo icon"></i>
+      </button>
+    </td>
+    <td class="center aligned">
+      <button type="submit" class="editSubmit" title="Save changes">
+        <i class="ui save icon"></i>
+      </button>
+    </td>
+  </tr>
+</form>

@@ -1,0 +1,25 @@
+<tr id="fish{{@index}}">
+  <td>
+    {{name}}
+  </td>
+  <td>
+    {{species}}
+  </td>
+  <td>
+    {{color}}
+  </td>
+  <td>
+    {{gender}}
+  </td>
+  <td class="center aligned">
+    <button title="Edit fish" class="editSubmit" id="showEdit{{@index}}">
+      <i class="ui pencil icon"></i>
+    </button>
+  </td>
+  <td class="center aligned">
+    <a href="/fishtank/{{fishtankId}}/deletefish/{{id}}"
+       title="Delete fish">
+      <i class="ui black trash icon"></i>
+    </a>
+  </td>
+</tr>

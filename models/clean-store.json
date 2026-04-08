@@ -30,12 +30,27 @@
           "ammonia": "Yellow",
           "tempeture": 24.3,
           "phlevel": 2.4
+        },
+        {
+          "id": "601c95b0-bf61-4c79-a393-7c3c064dfd4c",
+          "date": "2026-04-13",
+          "ammonia": "Zero",
+          "tempeture": "13",
+          "phlevel": "3"
         }
       ]
     },
     {
       "id": "02",
-      "cleaning": []
+      "cleaning": [
+        {
+          "id": "f5f9a7b4-f02a-4ac6-8e9d-ab6315d91e7e",
+          "date": "2026-04-16",
+          "ammonia": "red",
+          "tempeture": "24",
+          "phlevel": "3.1"
+        }
+      ]
     },
     {
       "id": "03",
@@ -77,15 +92,7 @@
     },
     {
       "id": "3a8e3657-9fcc-4278-b6cc-f804dfd80e6a",
-      "cleaning": [
-        {
-          "id": "eb6928e8-81c1-4cba-a554-fd18dd1e7969",
-          "date": "2026-04-20",
-          "ammonia": "zero",
-          "tempeture": "26",
-          "phlevel": "6.0"
-        }
-      ]
+      "cleaning": []
     },
     {
       "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",

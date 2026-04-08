@@ -29,6 +29,10 @@ getFishtank(id) {
   addFishtank(fishtank) {
   this.store.addCollection(this.collection, fishtank);
 },
+
+  editCleaning(id, cleaningId, updatedCleaning) {
+  this.store.editItem(this.collection, id, cleaningId, this.array, updatedCleaning);
+},
 };
 
 export default cleanStore;

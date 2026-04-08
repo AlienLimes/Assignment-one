@@ -28,6 +28,15 @@ router.post('/fishtank/:id/addfish', fishtank.addFish);
 router.post('/fishtank/:id/addcleaning', fishtank.addCleaning);
 // add fishtank
 router.post('/dashboard/addfishtank', dashboard.addFishtank);
+//edit fish
+router.post('/fishtank/:id/updatefish/:fishid', fishtank.updateFish);
+//edit cleanig
+router.post('/fishtank/:id/updatecleaning/:cleaningid', fishtank.updateCleaning);
+
+
+
+
+
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 
