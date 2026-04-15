@@ -1,4 +1,4 @@
-# Assignment 1 Krisztina Molnar 20111337
+# Assignment 1, Assignment 2 Krisztina Molnar 20111337
 
 Fish Tank App
 
@@ -7,6 +7,10 @@ In this app, I can record all the maintanace details and content of the fish tan
 Can have more tanks with different setup.
 
 So far the application only reads data from a static json file.
+
+Part 2
+
+Assignment 2 will include the following:
 
 
 
