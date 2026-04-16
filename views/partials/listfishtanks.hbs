@@ -1,14 +1,52 @@
 
 
 <section class="ui left aligned middle aligned segment">
-  <h2>Fish Tank Dashboard</h2>
+  {{!-- <h2>Fish Tank Dashboard</h2> --}}
+    
+    <section class="dashboard-header">
+  <h2 class="title">Fishtank App Dashboard</h2>
+ // updated form
+     <form action="/searchFishtank" method="GET" class="ui form">
 
+    <div class="ui inline fields">
+      <div class="field">
+        <input type="text" name="searchTerm" placeholder="Search by title..." value="{{search}}">
+      </div>
+      <div class="field">
+        <label>Sort by:</label>
+        <select class="ui dropdown" name="sort" onchange="this.form.submit()">
+          <option value="title" {{#if titleSelected}}selected{{/if}}>Title</option>
+          <option value="rating" {{#if ratingSelected}}selected{{/if}}>Rating</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Order:</label>
+        <select class="ui dropdown" name="order" onchange="this.form.submit()">
+          <option value="asc" {{#if ascSelected}}selected{{/if}}>↑</option>
+          <option value="desc" {{#if descSelected}}selected{{/if}}>↓</option>
+        </select>
+      </div>
+    </div>
+
+  </form>
+
+
+</section>
+
+
+
+
+
+     {{#unless search}}
   {{#unless fishtanks}}
-    <h3 class="ui orange message">
-      <i class="fish icon"></i>
-      Start adding your Fishtanks!
+    <h3 class="ui message">
+      Start adding your fishtanks!
     </h3>
   {{/unless}}
+{{/unless}}
+
+
+
 
   {{#each fishtanks}}
     <section class="ui left aligned middle aligned segment">

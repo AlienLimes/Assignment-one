@@ -1,39 +1,4 @@
-{{!-- {{#if cleaning}}
-  <table class="ui unstackable striped table">
-    <thead>
-      <tr>
-        <th>Cleaning Date <i class="fa-solid fa-broom"></i></th>
-        <th>Ammonia Level <i class="fa-solid fa-address-card"></i></th>
-        <th>Tempeture <i class="fa-solid fa-address-card"></i></th>
-        <th>PH Level <i class="fa-solid fa-address-card"></i></th>
-         <th>Actions <i class="fa-solid fa-trash"></i></th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each cleaning}}
-        <tr>
-          <td>{{date}}</td>
-          <td>{{ammonia}}</td>
-          <td>{{tempeture}} Celsius</td>
-          <td>{{phlevel}}</td>
 
-      <td class="center aligned">
-     <a href="/fishtank/{{../id}}/deletecleaning/{{id}}" 
-	        title="Delete cleaning">
-            <i class="ui black trash icon"></i>
-      </a>
-       </td>
-
-
-        </tr>
-      {{else}}
-        <tr>
-          <td>No cleaning records found</td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
-{{/if}} --}}
 
 {{#if cleaning}}
   <table class="ui unstackable striped table">
@@ -43,8 +8,8 @@
         <th class="three wide">Ammonia Level <i class="fa-solid fa-droplet"></i></th>
         <th class="three wide">Temperature <i class="fa-solid fa-temperature-half"></i></th>
         <th class="two wide">PH Level <i class="fa-solid fa-flask"></i></th>
-        <th class="two wide"> </th>
-        <th class="two wide"> </th>
+        <th class="two wide" style="text-align: left; padding-left: 40px;">Edit</th>
+        <th class="two wide"style="text-align: left; padding-left: 40px;">Delete </th>
       </tr>
     </thead>
     <tbody>

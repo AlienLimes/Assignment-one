@@ -183,10 +183,10 @@ body {
 
 
 
-    /* icon design start page */
+    /* icon design start page and stat page */
 
     
-.ui.three.statistics {
+.ui.statistics {
   background: rgba(255, 255, 255, 0.1); 
   border-radius: 12px;                
   padding: 24px;                     
@@ -245,4 +245,38 @@ body {
 
 .hide{
     display: none;
+}
+
+
+table {
+  margin:auto
+}
+
+.ui.blue.statistic .value {
+  color: #07396b !important;
+}
+.ui.red.statistic .value {
+  color: #db2828 !important;
+}
+.ui.teal.statistic .value {
+  color: #15ddd3 !important;
+}
+.ui.orange.statistic .value {
+  color: #f2711c !important;
+}
+.ui.yellow.statistic .value {
+  color: #fbbd08 !important;
+}
+.ui.green.statistic .value {
+  color: #065619 !important;
+}
+
+
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
 }

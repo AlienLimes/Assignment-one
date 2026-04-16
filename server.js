@@ -34,7 +34,7 @@ const handlebars = create({
     return `${dateCreated.toLocaleDateString("en-IE", options)}`;
 },  
      highlightPopular: (rating) => {
-   let message = rating >= 4 ? "Popular with listeners!" :  "";
+   let message = rating >= 4 ? "Popular fishtank!" :  "";
    return message;
 },
 

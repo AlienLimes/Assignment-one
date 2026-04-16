@@ -1,0 +1,140 @@
+
+
+{{> menu id="stats"}}
+
+<section class="ui center aligned middle aligned segment">
+
+  <h2>Fishtank App Statistics</h2>
+
+  <h3 class="ui header">App Statistics</h3>
+
+  <p>The fishtank app now contains:</p>
+
+  {{#with stats}}
+  <div class="ui center aligned grid">
+
+    {{!-- first row --}}
+    <div class="ui sixteen wide column">
+      <div class="ui centered three statistics">
+
+        <div class="ui yellow statistic">
+          <div class="value">
+            <i class="fish icon"></i>
+          </div>
+          <div class="label">
+            Number of fishtanks: {{displayNumFishtanks}}
+          </div>
+        </div>
+
+        <div class="ui red statistic">
+          <div class="value">
+            <i class="heart outline icon"></i>
+          </div>
+          <div class="label">
+            Total fish: {{displayNumFish}}
+          </div>
+        </div>
+
+        <div class="ui green statistic">
+          <div class="value">
+            <i class="balance scale icon"></i>
+          </div>
+          <div class="label">
+            Average fish per fishtank: {{displayAverage}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ui horizontal divider"></div>
+
+    {{!-- second row --}}
+
+    <div class="ui sixteen wide column">
+      <div class="ui centered three statistics">
+
+        <div class="ui orange statistic">
+          <div class="value">
+            <i class="fish icon"></i>
+          </div>
+          <div class="label">
+            Most fish in a tank: {{displayMaxFish}}
+          </div>
+        </div>
+
+        <div class="ui teal statistic">
+          <div class="value">
+            <i class="trophy icon"></i>
+          </div>
+          <div class="label">
+            Tank(s) with most fish:
+            <table>
+              {{#each displayMostFishTanks}}
+              <tr>
+                <td>{{this}}</td>
+              </tr>
+              {{/each}}
+            </table>
+          </div>
+        </div>
+       <div class="ui yellow statistic">
+          <div class="value">
+            <i class="star icon"></i>
+          </div>
+          <div class="label">
+            Highest rated: {{highest}} stars
+            <table>
+              {{#each displayFav}}
+              <tr>
+                <td>{{this}}</td>
+              </tr>
+              {{/each}}
+            </table>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="ui horizontal divider"></div>
+
+    {{!-- third row --}}
+
+    <div class="ui sixteen wide column">
+      <div class="ui centered one statistics">
+
+
+
+        <div class="ui green statistic">
+          <div class="value">
+            <i class="frown icon"></i> <i class="outline meh icon"></i> <i class="smile  icon"></i>   
+          </div>
+          <div class="label">
+            Average rating: {{displayAvgRating}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  {{/with}}
+
+
+  <div class="circle bubble-1"></div>
+  <div class="circle bubble-2"></div>
+  <div class="circle bubble-3"></div>
+  <div class="circle bubble-4"></div>
+  <div class="circle bubble-5"></div>
+  <div class="circle bubble-6"></div>
+  <div class="circle bubble-7"></div>
+  <div class="circle bubble-8"></div>
+
+
+
+</section>
+
+
+{{> footer}}

@@ -8,27 +8,48 @@ import { v4 as uuidv4 } from 'uuid';
 
 // get all data from the  fish store ,ready for view
 const dashboard = {
-  createView(request, response) {
-    logger.info("Dashboard page loading!");
-    
+ 
+  
+ //updated creat view
 
-    const viewData = {
-      title: "Fish App Dashboard",
-      fishtanks: fishStore.getAllFish(), 
-      // fish: fishStore.getAllFish(),
-       //updated year
-      currentYear: new Date().getFullYear(), 
-    };
-    
-    logger.debug(viewData.fish);
-    
-    response.render('dashboard', viewData);
-  },
+  createView(request, response) {
+  logger.info("Dashboard page loading!");
+  const searchTerm = request.query.searchTerm || "";
+  const fishtanks = searchTerm
+    ? fishStore.searchFishtank(searchTerm)
+    : fishStore.getAllFish();
+  const sortField = request.query.sort;
+  const order = request.query.order === "desc" ? -1 : 1;
+  let sorted = fishtanks;
+  if (sortField) {
+    sorted = fishtanks.slice().sort((a, b) => {
+      if (sortField === "title") {
+        return a.title.localeCompare(b.title) * order;
+      }
+      if (sortField === "rating") {
+        return (a.rating - b.rating) * order;
+      }
+      return 0;
+    });
+  }
+  const viewData = {
+    title: "Fishtank App Dashboard",
+    fishtanks: sortField ? sorted : fishtanks,
+    search: searchTerm,
+    titleSelected: request.query.sort === "title",
+    ratingSelected: request.query.sort === "rating",
+    ascSelected: request.query.order === "asc",
+    descSelected: request.query.order === "desc",
+  };
+  logger.debug(viewData.fishtanks);
+  response.render("dashboard", viewData);
+},
      
     addFishtank(request, response) {
        const timestamp = new Date();
        const id = uuidv4();
-  const newFishtank = {
+
+     const newFishtank = {
     
     id: id,
     title: request.body.title,
@@ -55,10 +76,6 @@ const dashboard = {
   fishStore.removeFishtank(fishtankId);
   response.redirect('/dashboard');
 },
-
-
-
-
 
 
 

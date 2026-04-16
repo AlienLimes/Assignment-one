@@ -9,6 +9,11 @@ import start from './controllers/start.js';
 import about from './controllers/about.js'; 
 import dashboard from './controllers/dashboard.js'; 
 import fishtank from './controllers/fishtank.js';
+import stats from './controllers/stats.js';
+
+
+
+
 
 router.get('/', start.createView);
 router.get('/about', about.createView); 
@@ -21,6 +26,13 @@ router.get('/fishtank/:id/deletefish/:fishid', fishtank.deleteFish);
 router.get('/fishtank/:id/deletecleaning/:cleaningid', fishtank.deleteCleaning);
 // delete fishtank
 router.get('/dashboard/deletefishtank/:id', dashboard.deleteFishtank);
+//statistic
+router.get('/stats', stats.createView);
+//search
+router.get('/searchFishtank', dashboard.createView);
+//sorting
+router.get('/sortFishtank', dashboard.createView);
+
 
 // add fish
 router.post('/fishtank/:id/addfish', fishtank.addFish);

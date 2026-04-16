@@ -38,7 +38,12 @@ addFishtank(fishtank) {
    editFish(id, fishId, updatedFish) {
     this.store.editItem(this.collection, id, fishId, this.array, updatedFish);
 },
-
+ 
+searchFishtank(search) {
+  return this.store.findBy(
+    this.collection,
+    (fishtank => fishtank.title.toLowerCase().includes(search.toLowerCase())))
+},
 
 };
 

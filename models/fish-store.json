@@ -63,6 +63,13 @@
           "ammonia": "Yellow",
           "tempeture": 24.3,
           "phlevel": 2.4
+        },
+        {
+          "id": "601c95b0-bf61-4c79-a393-7c3c064dfd4c",
+          "date": "2026-04-13",
+          "ammonia": "Zero",
+          "tempeture": "13",
+          "phlevel": "3"
         }
       ]
     },
