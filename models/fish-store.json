@@ -1,159 +1,99 @@
 {
   "fishCollection": [
     {
-      "id": "01",
-      "title": "Main Tank",
-      "date": "2026-02-01",
-      "rating": 5,
-      "fish": [
-        {
-          "id": "04",
-          "name": "Goldie",
-          "species": "Goldfish",
-          "color": "orange",
-          "gender": "Female"
-        },
-        {
-          "id": "7dcbd1de-c875-4583-9473-3ffab7fce663",
-          "name": "Pollen",
-          "species": "Mollie",
-          "color": "grey",
-          "gender": "male"
-        },
-        {
-          "id": "65b83dfb-c0ae-45cc-9e8a-dac084ca9227",
-          "name": "Neo",
-          "species": "Mollie",
-          "color": "red",
-          "gender": "female"
-        },
-        {
-          "id": "c0569d0e-767c-43c3-b8dc-9b6ed76127ee",
-          "name": "Red",
-          "species": "Mollie",
-          "color": "Striped",
-          "gender": "Female"
-        }
-      ],
-      "cleaning": [
-        {
-          "id": "c01",
-          "date": "2026-02-01",
-          "ammonia": "Yellow",
-          "tempeture": 25.3,
-          "phlevel": 2.5
-        },
-        {
-          "id": "c02",
-          "date": "2026-02-12",
-          "ammonia": "Yellow",
-          "tempeture": 26.3,
-          "phlevel": 2.7
-        },
-        {
-          "id": "c03",
-          "date": "2026-03-01",
-          "ammonia": "Orange",
-          "tempeture": 25.7,
-          "phlevel": 2
-        },
-        {
-          "id": "c04",
-          "date": "2026-03-14",
-          "ammonia": "Yellow",
-          "tempeture": 24.3,
-          "phlevel": 2.4
-        },
-        {
-          "id": "601c95b0-bf61-4c79-a393-7c3c064dfd4c",
-          "date": "2026-04-13",
-          "ammonia": "Zero",
-          "tempeture": "13",
-          "phlevel": "3"
-        }
-      ]
+      "id": "d1f45bca-78a0-4730-ad6e-ed8abbaa778d",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Homer's new fishtank",
+      "rating": 2,
+      "date": "2026-04-24T09:28:41.969Z",
+      "fish": [],
+      "cleaning": []
     },
     {
-      "id": "02",
-      "title": "Quarantine Fish Tank",
-      "date": "2026-01-04",
+      "id": "2435591d-4f42-43d7-9244-fcfdd5641827",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "kkkk",
       "rating": 3,
+      "date": "2026-04-24T10:08:53.929Z",
+      "fish": [],
+      "cleaning": []
+    },
+    {
+      "id": "d8ec462b-e096-44a2-9847-b971d116a226",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "new",
+      "rating": 3,
+      "date": "2026-04-24T10:12:43.053Z",
       "fish": [
         {
-          "id": "07",
-          "name": "Neo",
-          "species": "Neon Tetra",
-          "color": "purple",
-          "gender": "male"
+          "id": "2382e280-5efc-441e-816e-28ec871bbd63",
+          "name": "Red",
+          "species": "Molli",
+          "color": "Red",
+          "gender": "Female"
         },
         {
-          "id": "08",
-          "name": "Bully",
+          "id": "fab1398f-d2ba-40ac-94fe-93f8484b691a",
+          "name": "Joe",
           "species": "Mollie",
-          "color": "striped",
-          "gender": "female"
-        },
-        {
-          "id": "8b732d83-6e14-4ef1-80ef-d37b4adadb33",
-          "name": "test",
-          "species": "shark",
-          "color": "white",
-          "gender": "female"
+          "color": "Green",
+          "gender": "Male"
         }
       ],
       "cleaning": []
     },
     {
-      "id": "03",
-      "title": "Future plans",
-      "date": "2026-03-01",
-      "rating": 2,
-      "fish": [
-        {
-          "id": "b8ab36c0-f45a-4dd0-9ae3-dded85877b51",
-          "name": "Pollen",
-          "species": "molli",
-          "color": "yellow",
-          "gender": "female"
-        },
-        {
-          "id": "78a00afa-271f-4254-90a6-c2913aa54460",
-          "name": "Tibor Molnar",
-          "species": "molli",
-          "color": "red",
-          "gender": "male"
-        }
-      ],
-      "cleaning": [
-        {
-          "id": "c10",
-          "date": "none",
-          "ammonia": "-",
-          "tempeture": 0,
-          "phlevel": 0
-        },
-        {
-          "id": "c11",
-          "date": "2026-03-11",
-          "ammonia": "green",
-          "tempeture": "0.1",
-          "phlevel": "0.1"
-        },
-        {
-          "id": "c12",
-          "date": "2026-03-24",
-          "ammonia": "green",
-          "tempeture": "0.8",
-          "phlevel": "0.9"
-        }
-      ]
+      "id": "22328af3-dc36-4f89-924c-d9198f41eb93",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "marge tank",
+      "rating": 1,
+      "date": "2026-04-24T10:13:01.616Z",
+      "fish": [],
+      "cleaning": []
     },
     {
-      "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",
-      "title": "maci",
-      "date": "2026-03-01",
-      "rating": 5,
-      "fish": [],
+      "id": "0ae7e87a-a978-4b69-b2c8-e1498205481e",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Main tank",
+      "rating": 4,
+      "date": "2026-04-24T10:52:05.877Z",
+      "fish": [
+        {
+          "id": "6cf126e9-70b1-49c6-882e-d4e35da33db0",
+          "name": "Pollen",
+          "species": "Mollie",
+          "color": "Yellow",
+          "gender": "Male"
+        },
+        {
+          "id": "754d5cad-7d68-4bab-bf5e-3495f46ca06e",
+          "name": "Neo",
+          "species": "Plecko",
+          "color": "Yellow",
+          "gender": "Male"
+        },
+        {
+          "id": "d1c5739a-ecb5-43a6-b55f-1d23d63c13c5",
+          "name": "Pocok",
+          "species": "Mollie",
+          "color": "Yellow",
+          "gender": "Female"
+        },
+        {
+          "id": "62d201d3-6f4c-47dd-86a6-5d486df2266a",
+          "name": "Blacky",
+          "species": "Molli",
+          "color": "Black",
+          "gender": "Female"
+        },
+        {
+          "id": "bef5dd1c-dbce-4938-898d-a927ec5da7b6",
+          "name": "Fatty",
+          "species": "Shark",
+          "color": "Red",
+          "gender": "Male"
+        }
+      ],
       "cleaning": []
     }
   ]

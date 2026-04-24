@@ -10,12 +10,15 @@ import about from './controllers/about.js';
 import dashboard from './controllers/dashboard.js'; 
 import fishtank from './controllers/fishtank.js';
 import stats from './controllers/stats.js';
+import accounts from './controllers/accounts.js';
 
 
 
 
 
-router.get('/', start.createView);
+// router.get('/', start.createView);
+router.get('/start', start.createView);
+
 router.get('/about', about.createView); 
 router.get('/dashboard', dashboard.createView);
 router.get('/fishtank/:id', fishtank.createView);
@@ -46,6 +49,12 @@ router.post('/fishtank/:id/updatefish/:fishid', fishtank.updateFish);
 router.post('/fishtank/:id/updatecleaning/:cleaningid', fishtank.updateCleaning);
 
 
+router.get('/', accounts.index);
+router.get('/login', accounts.login);
+router.get('/signup', accounts.signup);
+router.get('/logout', accounts.logout);
+router.post('/register', accounts.register);
+router.post('/authenticate', accounts.authenticate);
 
 
 

@@ -45,6 +45,17 @@ searchFishtank(search) {
     (fishtank => fishtank.title.toLowerCase().includes(search.toLowerCase())))
 },
 
+
+getUserFishtanks(userid) {
+  return this.store.findBy(this.collection, (fishtank => fishtank.userid === userid));
+},
+
+searchUserFishtanks(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (fishtank => fishtank.userid === userid && fishtank.title.toLowerCase().includes(search.toLowerCase())))
+},
+
 };
 
 export default fishStore;

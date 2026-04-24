@@ -1,27 +1,29 @@
+
+
+
 'use strict';
 
 import logger from "../utils/logger.js";
-
 import appStore from "../models/app-store.js";
+import accounts from './accounts.js';
 
-// home controller
 const start = {
   createView(request, response) {
     logger.info("Start page loading!");
-    
 
+    const loggedInUser = accounts.getCurrentUser(request);
 
-    // this creates list that can be connected to the view
-    const viewData = {
-
-      // titel of the tap on the page
-      title: "FishTank App",
-      info: appStore.getAppInfo(),
-      //updated year
-      currentYear: new Date().getFullYear() 
-    };
-    
-    response.render('start', viewData);   
+    if (loggedInUser) {
+      const viewData = {
+        title: "FishTank App",
+        info: appStore.getAppInfo(),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        currentYear: new Date().getFullYear(),
+      };
+      response.render('start', viewData);
+    } else {
+      response.redirect('/');
+    }
   },
 };
 

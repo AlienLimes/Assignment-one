@@ -1,118 +1,47 @@
 {
   "fishCollection": [
     {
-      "id": "01",
+      "id": "d1f45bca-78a0-4730-ad6e-ed8abbaa778d",
+      "cleaning": []
+    },
+    {
+      "id": "2435591d-4f42-43d7-9244-fcfdd5641827",
+      "cleaning": []
+    },
+    {
+      "id": "d8ec462b-e096-44a2-9847-b971d116a226",
       "cleaning": [
         {
-          "id": "c01",
-          "date": "2026-02-01",
-          "ammonia": "Yellow",
-          "tempeture": 25.3,
-          "phlevel": 2.5
-        },
+          "id": "58b249d1-e780-46e9-8dbb-dcc79c4c7ef3",
+          "date": "2026-04-08",
+          "ammonia": "Red",
+          "tempeture": "25",
+          "phlevel": "0.4"
+        }
+      ]
+    },
+    {
+      "id": "22328af3-dc36-4f89-924c-d9198f41eb93",
+      "cleaning": []
+    },
+    {
+      "id": "0ae7e87a-a978-4b69-b2c8-e1498205481e",
+      "cleaning": [
         {
-          "id": "c02",
-          "date": "2026-02-12",
-          "ammonia": "Yellow",
-          "tempeture": 26.3,
-          "phlevel": 2.7
-        },
-        {
-          "id": "c03",
-          "date": "2026-03-01",
-          "ammonia": "Orange",
-          "tempeture": 25.7,
-          "phlevel": 2
-        },
-        {
-          "id": "c04",
-          "date": "2026-03-14",
-          "ammonia": "Yellow",
-          "tempeture": 24.3,
-          "phlevel": 2.4
-        },
-        {
-          "id": "601c95b0-bf61-4c79-a393-7c3c064dfd4c",
-          "date": "2026-04-13",
+          "id": "e50af636-8169-4271-b68b-d262d35b4bd6",
+          "date": "2026-04-22",
           "ammonia": "Zero",
-          "tempeture": "13",
-          "phlevel": "3"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "cleaning": [
+          "tempeture": "26",
+          "phlevel": "4.5"
+        },
         {
-          "id": "f5f9a7b4-f02a-4ac6-8e9d-ab6315d91e7e",
-          "date": "2026-04-16",
-          "ammonia": "red",
+          "id": "78b00524-132a-4006-934e-704f29deef13",
+          "date": "2026-04-07",
+          "ammonia": "Green",
           "tempeture": "24",
-          "phlevel": "3.1"
+          "phlevel": "4"
         }
       ]
-    },
-    {
-      "id": "03",
-      "cleaning": [
-        {
-          "id": "c10",
-          "date": "none",
-          "ammonia": "-",
-          "tempeture": 0,
-          "phlevel": 0
-        },
-        {
-          "id": "c11",
-          "date": "2026-03-11",
-          "ammonia": "green",
-          "tempeture": "0.1",
-          "phlevel": "0.1"
-        },
-        {
-          "id": "c12",
-          "date": "2026-03-24",
-          "ammonia": "green",
-          "tempeture": "0.8",
-          "phlevel": "0.9"
-        }
-      ]
-    },
-    {
-      "id": "5a01b883-a756-499e-93e6-9f275b178f03",
-      "cleaning": []
-    },
-    {
-      "id": "56f3bec6-543c-4c03-bf4b-41f16d4cea64",
-      "cleaning": []
-    },
-    {
-      "id": "d1b88f6c-e5ad-4bdb-86bc-95bcb78a33c8",
-      "cleaning": []
-    },
-    {
-      "id": "3a8e3657-9fcc-4278-b6cc-f804dfd80e6a",
-      "cleaning": []
-    },
-    {
-      "id": "084e3888-bd6d-48f9-a7ad-dac49045be8a",
-      "cleaning": []
-    },
-    {
-      "id": "719015c4-0fd9-4f3e-b825-ecb391119360",
-      "cleaning": []
-    },
-    {
-      "id": "adfb93b3-99c3-4a47-bf69-9940767063aa",
-      "cleaning": []
-    },
-    {
-      "id": "8d08503a-79d8-4d44-82ab-3e9e3f3f24d3",
-      "cleaning": []
-    },
-    {
-      "id": "1a2acd6b-e7ce-408a-b394-8c63fe7a15db",
-      "cleaning": []
     }
   ]
 }
