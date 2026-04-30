@@ -1,0 +1,38 @@
+
+<section class="ui left aligned middle aligned segment" style="background: linear-gradient(160deg, #0a4a6e 0%, #1dbfbf 100%) !important; margin-bottom: 1rem;">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <img src="{{picture.url}}" style="width: 120px; height: 90px; object-fit: cover; border-radius: 4px;">
+      <div>
+        <h3 class="ui header" style="color: rgb(0, 0, 0);">{{uppercase title}}</h3>
+        <p style="color: rgb(0, 0, 0);">
+          <i class="orange fish icon"></i>
+          {{#if fish}}
+            Total Fish: {{fish.length}}
+          {{else}}
+            Empty fishtank!
+          {{/if}}
+          {{#if date}}
+            <br>
+            <i class="calendar alternate outline icon"></i>
+            Created on <i>{{formatDate date}}</i>
+          {{/if}}
+        </p>
+        {{#if rating}}
+          <p>
+            <span class="ui yellow disabled rating" data-icon="star" data-rating="{{rating}}" data-max-rating="5"></span>
+            <span style="color: rgb(247, 231, 2); font-size: 90%; font-style: italic">
+              {{highlightPopular rating}}
+            </span>
+          </p>
+        {{/if}}
+        <a href="/fishtank/{{id}}"><i class="teal folder open icon"></i></a>
+      </div>
+    </div>
+    <div>
+      <a href="/dashboard/deletefishtank/{{id}}">
+        <i class="ui black trash icon"></i>
+      </a>
+    </div>
+  </div>
+</section>

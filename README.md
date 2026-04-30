@@ -23,6 +23,7 @@ So far the application only reads data from a static json file.
   - Highest rated fishtanks and average rating
 - **Dashboard Search** - Search fishtanks by title
 - **Dashboard Sorting** - Sort fishtanks by title or rating in ascending or descending order
+- **Dashboard Add Fishtank** - Image upload functionality
 - **Active Nav Highlighting** - Navigation highlights the current page
 
 

@@ -1,3 +1,5 @@
 $('.ui.rating')
   .rating()
 ;
+
+

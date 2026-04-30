@@ -1,47 +1,44 @@
 {
   "fishCollection": [
     {
-      "id": "d1f45bca-78a0-4730-ad6e-ed8abbaa778d",
-      "cleaning": []
-    },
-    {
-      "id": "2435591d-4f42-43d7-9244-fcfdd5641827",
-      "cleaning": []
-    },
-    {
-      "id": "d8ec462b-e096-44a2-9847-b971d116a226",
-      "cleaning": [
-        {
-          "id": "58b249d1-e780-46e9-8dbb-dcc79c4c7ef3",
-          "date": "2026-04-08",
-          "ammonia": "Red",
-          "tempeture": "25",
-          "phlevel": "0.4"
-        }
-      ]
-    },
-    {
       "id": "22328af3-dc36-4f89-924c-d9198f41eb93",
       "cleaning": []
     },
     {
-      "id": "0ae7e87a-a978-4b69-b2c8-e1498205481e",
+      "id": "19c6ed22-32e7-4be6-a668-a71b342e95ab",
       "cleaning": [
         {
-          "id": "e50af636-8169-4271-b68b-d262d35b4bd6",
+          "id": "c7c4dd47-9f52-49ff-9636-f551737cc1f3",
           "date": "2026-04-22",
-          "ammonia": "Zero",
-          "tempeture": "26",
-          "phlevel": "4.5"
-        },
-        {
-          "id": "78b00524-132a-4006-934e-704f29deef13",
-          "date": "2026-04-07",
-          "ammonia": "Green",
-          "tempeture": "24",
-          "phlevel": "4"
+          "ammonia": "20",
+          "tempeture": "0.2",
+          "phlevel": "0.2"
         }
       ]
+    },
+    {
+      "id": "f17674ff-98f6-48b1-a1e7-488b92cb4ce3",
+      "cleaning": []
+    },
+    {
+      "id": "e902f610-5432-4148-afb0-f430f83ac1d8",
+      "cleaning": [
+        {
+          "id": "f4237ccc-b3d2-42ff-b110-a5fe8eb3acf9",
+          "date": "2026-04-29",
+          "ammonia": "Good",
+          "tempeture": "26",
+          "phlevel": "0.6"
+        }
+      ]
+    },
+    {
+      "id": "0e1ba390-251c-4c8a-84e5-72153eddcfc9",
+      "cleaning": []
+    },
+    {
+      "id": "37d631fb-9607-4aec-b93c-8689b1db3fee",
+      "cleaning": []
     }
   ]
 }

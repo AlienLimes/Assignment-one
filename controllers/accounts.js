@@ -25,11 +25,27 @@ const accounts = {
   },
 
     //logout function to render logout page
-  logout(request, response) {
-    response.cookie('fishtank', '');
-    response.redirect('/');
-  },
-   
+  // logout(request, response) {
+  //   response.cookie('fishtank', '');
+  //   response.redirect('/');
+  // },
+
+  
+   logout(request, response) {
+  //  expire the cookie instead of just emptying it
+  response.clearCookie('fishtank');
+  
+  // Prevent the browser from caching this and previous pages
+  response.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+  response.setHeader('Pragma', 'no-cache');
+  
+  response.redirect('/');
+},
+
+
+
+
+
    //signup function to render signup page
   signup(request, response) {
     const viewData = {
@@ -59,17 +75,39 @@ const accounts = {
     
 
 
-  authenticate(request, response) {
-    const user = userStore.getUserByEmail(request.body.email);
-    if (user && user.password === request.body.password) {
-      response.cookie('fishtank', user.email);
-      logger.info('logging in ' + user.email);
-      // homepage
-      response.redirect('/start');
-    } else {
-      response.render('login', { title: 'Login to the Fish App', errorMessage: 'Invalid Authentication' });
-    }
-  },
+  // authenticate(request, response) {
+  //   const user = userStore.getUserByEmail(request.body.email);
+  //   if (user && user.password === request.body.password) {
+  //     response.cookie('fishtank', user.email);
+  //     logger.info('logging in ' + user.email);
+  //     // homepage
+  //     response.redirect('/start');
+  //   } else {
+  //     response.render('login', { title: 'Login to the Fish App', errorMessage: 'Invalid Authentication' });
+  //   }
+  // },
+
+    authenticate(request, response) {
+  const user = userStore.getUserByEmail(request.body.email);
+  if (user && user.password === request.body.password) {
+    response.cookie('fishtank', user.email);
+    
+    // Prevent caching of authenticated pages
+    response.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+    response.setHeader('Pragma', 'no-cache');
+    
+    logger.info('logging in ' + user.email);
+    response.redirect('/start');
+  } else {
+    response.render('login', { title: 'Login to the Fish App', errorMessage: 'Invalid Authentication' });
+  }
+},
+
+  
+
+
+
+
    
    //utility function getCurrentUser to check who is currently logged in
   getCurrentUser(request) {

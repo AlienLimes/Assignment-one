@@ -1,48 +1,6 @@
 {
   "fishCollection": [
     {
-      "id": "d1f45bca-78a0-4730-ad6e-ed8abbaa778d",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Homer's new fishtank",
-      "rating": 2,
-      "date": "2026-04-24T09:28:41.969Z",
-      "fish": [],
-      "cleaning": []
-    },
-    {
-      "id": "2435591d-4f42-43d7-9244-fcfdd5641827",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "kkkk",
-      "rating": 3,
-      "date": "2026-04-24T10:08:53.929Z",
-      "fish": [],
-      "cleaning": []
-    },
-    {
-      "id": "d8ec462b-e096-44a2-9847-b971d116a226",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "new",
-      "rating": 3,
-      "date": "2026-04-24T10:12:43.053Z",
-      "fish": [
-        {
-          "id": "2382e280-5efc-441e-816e-28ec871bbd63",
-          "name": "Red",
-          "species": "Molli",
-          "color": "Red",
-          "gender": "Female"
-        },
-        {
-          "id": "fab1398f-d2ba-40ac-94fe-93f8484b691a",
-          "name": "Joe",
-          "species": "Mollie",
-          "color": "Green",
-          "gender": "Male"
-        }
-      ],
-      "cleaning": []
-    },
-    {
       "id": "22328af3-dc36-4f89-924c-d9198f41eb93",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "marge tank",
@@ -52,49 +10,129 @@
       "cleaning": []
     },
     {
-      "id": "0ae7e87a-a978-4b69-b2c8-e1498205481e",
+      "id": "19c6ed22-32e7-4be6-a668-a71b342e95ab",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Main tank",
-      "rating": 4,
-      "date": "2026-04-24T10:52:05.877Z",
+      "title": "teszt",
+      "rating": 5,
+      "date": "2026-04-30T10:02:13.789Z",
       "fish": [
         {
-          "id": "6cf126e9-70b1-49c6-882e-d4e35da33db0",
-          "name": "Pollen",
+          "id": "0b3c74c4-9f24-4f52-933b-710b0a482bbd",
+          "name": "Red",
           "species": "Mollie",
-          "color": "Yellow",
-          "gender": "Male"
+          "color": "Red",
+          "gender": "Female"
         },
         {
-          "id": "754d5cad-7d68-4bab-bf5e-3495f46ca06e",
+          "id": "3537876c-1e84-41e3-9274-62bc69565bdf",
           "name": "Neo",
           "species": "Plecko",
-          "color": "Yellow",
+          "color": "Striped",
           "gender": "Male"
         },
         {
-          "id": "d1c5739a-ecb5-43a6-b55f-1d23d63c13c5",
+          "id": "b819cb12-72c9-4370-97f5-afd434d02020",
+          "name": "Red",
+          "species": "Molli",
+          "color": "Red",
+          "gender": "Female"
+        }
+      ],
+      "cleaning": [
+        {
+          "id": "c7c4dd47-9f52-49ff-9636-f551737cc1f3",
+          "date": "2026-04-22",
+          "ammonia": "20",
+          "tempeture": "0.2",
+          "phlevel": "0.2"
+        }
+      ],
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777543334/b4rdx9csnjlzjuxuiojh.jpg",
+        "public_id": "b4rdx9csnjlzjuxuiojh"
+      }
+    },
+    {
+      "id": "f17674ff-98f6-48b1-a1e7-488b92cb4ce3",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "teszt2",
+      "rating": 2,
+      "date": "2026-04-30T10:30:05.574Z",
+      "fish": [],
+      "cleaning": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777545006/zxzqv2jnxl6l6qiyvwtv.jpg",
+        "public_id": "zxzqv2jnxl6l6qiyvwtv"
+      }
+    },
+    {
+      "id": "e902f610-5432-4148-afb0-f430f83ac1d8",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "First tank",
+      "rating": 4,
+      "date": "2026-04-30T11:14:29.112Z",
+      "fish": [
+        {
+          "id": "a35e225d-8e5a-4158-8909-239e65ba37b8",
           "name": "Pocok",
           "species": "Mollie",
           "color": "Yellow",
           "gender": "Female"
         },
         {
-          "id": "62d201d3-6f4c-47dd-86a6-5d486df2266a",
-          "name": "Blacky",
-          "species": "Molli",
+          "id": "604f5396-d64c-484b-8a6a-8175fef0d0c8",
+          "name": "Pollen",
+          "species": "Mollie",
+          "color": "White",
+          "gender": "Male"
+        }
+      ],
+      "cleaning": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777547670/idxugkbgmpmuc2fzth94.jpg",
+        "public_id": "idxugkbgmpmuc2fzth94"
+      }
+    },
+    {
+      "id": "0e1ba390-251c-4c8a-84e5-72153eddcfc9",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Second fishtank",
+      "rating": 3,
+      "date": "2026-04-30T11:14:55.439Z",
+      "fish": [
+        {
+          "id": "67de0657-5340-4c42-aca3-3e3d279254b6",
+          "name": "Fekete",
+          "species": "Mollie",
           "color": "Black",
           "gender": "Female"
         },
         {
-          "id": "bef5dd1c-dbce-4938-898d-a927ec5da7b6",
-          "name": "Fatty",
-          "species": "Shark",
-          "color": "Red",
-          "gender": "Male"
+          "id": "19ce2af6-2d97-4d1c-9014-c11951435def",
+          "name": "Dagi",
+          "species": "Mollie",
+          "color": "Striped",
+          "gender": "Female"
         }
       ],
-      "cleaning": []
+      "cleaning": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777547697/d1biouxhgqkivkntsn4s.jpg",
+        "public_id": "d1biouxhgqkivkntsn4s"
+      }
+    },
+    {
+      "id": "37d631fb-9607-4aec-b93c-8689b1db3fee",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tibi",
+      "rating": 1,
+      "date": "2026-04-30T11:26:20.737Z",
+      "fish": [],
+      "cleaning": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777548382/a5cd8sdhihb9xo3216gp.jpg",
+        "public_id": "a5cd8sdhihb9xo3216gp"
+      }
     }
   ]
 }

@@ -26,15 +26,38 @@ removeFish(id, fishId) {
 },
 
 
-addFishtank(fishtank) {
-  this.store.addCollection(this.collection, fishtank);
+// addFishtank(fishtank) {
+//   this.store.addCollection(this.collection, fishtank);
+// },
+  async addFishtank(fishtank, file, response) {
+  try {
+    fishtank.picture = await this.store.addToCloudinary(file);
+    this.store.addCollection(this.collection, fishtank);
+    response();
+  } catch (error) {
+    logger.error("Error processing fishtank:", error);
+    response(error);
+  }
 },
-  
 
-  removeFishtank(id) {
+//   removeFishtank(id) {
+//   const fishtank = this.getFishtank(id);
+//   this.store.removeCollection(this.collection, fishtank);
+// },
+async removeFishtank(id, response) {
   const fishtank = this.getFishtank(id);
+  if (fishtank.picture && fishtank.picture.public_id) {
+    try {
+      await this.store.deleteFromCloudinary(fishtank.picture.public_id);
+      logger.info("Cloudinary image deleted");
+    } catch (err) {
+      logger.error("Failed to delete Cloudinary image:", err);
+    }
+  }
   this.store.removeCollection(this.collection, fishtank);
+  response();
 },
+
    editFish(id, fishId, updatedFish) {
     this.store.editItem(this.collection, id, fishId, this.array, updatedFish);
 },

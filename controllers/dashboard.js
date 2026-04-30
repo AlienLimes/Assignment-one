@@ -67,38 +67,73 @@ const dashboard = {
     }
   },
 
-  addFishtank(request, response) {
-    const loggedInUser = accounts.getCurrentUser(request);
-    const timestamp = new Date();
-    const id = uuidv4();
+  // addFishtank(request, response) {
+  //   const loggedInUser = accounts.getCurrentUser(request);
+  //   const timestamp = new Date();
+  //   const id = uuidv4();
 
-    const newFishtank = {
-      id: id,
-      userid: loggedInUser.id,
-      title: request.body.title,
-      rating: parseInt(request.body.rating),
-      date: timestamp,
-      fish: [],
-      cleaning: [],
-    };
-    fishStore.addFishtank(newFishtank);
+  //   const newFishtank = {
+  //     id: id,
+  //     userid: loggedInUser.id,
+  //     title: request.body.title,
+  //     rating: parseInt(request.body.rating),
+  //     date: timestamp,
+  //     fish: [],
+  //     cleaning: [],
+  //   };
+  //   fishStore.addFishtank(newFishtank);
 
-    const newCleaning = {
-      id: id,
-      cleaning: [],
-    };
+  //   const newCleaning = {
+  //     id: id,
+  //     cleaning: [],
+  //   };
+  //   cleanStore.addFishtank(newCleaning);
+
+  //   response.redirect('/dashboard');
+  // },
+addFishtank(request, response) {
+  const loggedInUser = accounts.getCurrentUser(request);
+  const timestamp = new Date();
+  const id = uuidv4();
+
+  const newFishtank = {
+    id: id,
+    userid: loggedInUser.id,
+    title: request.body.title,
+    rating: parseInt(request.body.rating),
+    date: timestamp,
+    fish: [],
+    cleaning: [],
+  };
+
+  const newCleaning = {
+    id: id,
+    cleaning: [],
+  };
+
+  fishStore.addFishtank(newFishtank, request.files.picture, function() {
     cleanStore.addFishtank(newCleaning);
-
     response.redirect('/dashboard');
-  },
-
-  deleteFishtank(request, response) {
-    const fishtankId = request.params.id;
-    logger.debug(`Deleting Fishtank ${fishtankId}`);
-    fishStore.removeFishtank(fishtankId);
+  });
+},
+deleteFishtank(request, response) {
+  const fishtankId = request.params.id;
+  logger.debug(`Deleting Fishtank ${fishtankId}`);
+  fishStore.removeFishtank(fishtankId, function() {
+    cleanStore.removeFishtank(fishtankId);
     response.redirect('/dashboard');
-  },
+  });
+},
+
+  // deleteFishtank(request, response) {
+  //   const fishtankId = request.params.id;
+  //   logger.debug(`Deleting Fishtank ${fishtankId}`);
+  //   fishStore.removeFishtank(fishtankId);
+  //   response.redirect('/dashboard');
+  // },
+
 
 };
+
 
 export default dashboard;

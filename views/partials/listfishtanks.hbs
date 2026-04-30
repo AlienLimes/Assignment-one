@@ -1,43 +1,7 @@
 
-
-<section class="ui left aligned middle aligned segment">
-  {{!-- <h2>Fish Tank Dashboard</h2> --}}
-    
-    <section class="dashboard-header">
-  <h2 class="title">Fishtanks </h2>
- 
-     <form action="/searchFishtank" method="GET" class="ui form">
-
-    <div class="ui inline fields">
-      <div class="field">
-        <input type="text" name="searchTerm" placeholder="Search by title..." value="{{search}}">
-      </div>
-      <div class="field">
-        <label>Sort by:</label>
-        <select class="ui dropdown" name="sort" onchange="this.form.submit()">
-          <option value="title" {{#if titleSelected}}selected{{/if}}>Title</option>
-          <option value="rating" {{#if ratingSelected}}selected{{/if}}>Rating</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Order:</label>
-        <select class="ui dropdown" name="order" onchange="this.form.submit()">
-          <option value="asc" {{#if ascSelected}}selected{{/if}}>↑</option>
-          <option value="desc" {{#if descSelected}}selected{{/if}}>↓</option>
-        </select>
-      </div>
-    </div>
-
-  </form>
-
-
-</section>
-
-
-
-
-
-     {{#unless search}}
+<section>
+{{> dashboardHeader }}
+{{#unless search}}
   {{#unless fishtanks}}
     <h3 class="ui message">
       Start adding your fishtanks!
@@ -45,60 +9,8 @@
   {{/unless}}
 {{/unless}}
 
-
-
-
-  {{#each fishtanks}}
-    <section class="ui left aligned middle aligned segment">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div>
-          <h3 class="ui header">{{uppercase title}}</h3>
-         
-          <p>
-    <i class="orange fish icon"></i>
-    {{#if fish}}
-        Total Fish:
-        {{fish.length}}
-
-    {{else}}
-        Empty fishtank!
-    {{/if}}
-
-    {{#if date}}
-        <br>
-        <i class="calendar alternate outline icon"></i>
-        Created on <i>{{formatDate date}}</i>
-    {{/if}}
-</p>
-
-         {{#if rating}}
-    <p>
-        <span 
-            class="ui yellow disabled rating" 
-            data-icon="star" 
-            data-rating="{{rating}}" 
-            data-max-rating="5">
-        </span>
-            <span style="color: rgb(247, 231, 2); font-size: 90%; font-style: italic">
-               {{highlightPopular rating}}
-              </span>
-
-    </p>
-   {{/if}}
-
-
-          <a href="/fishtank/{{id}}">
-         <i class="teal folder open icon"></i>
-            
-          </a>
-        </div>
-        <div>
-          <a href="/dashboard/deletefishtank/{{id}}">
-            <i class="ui trash black icon"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-  {{/each}}
+{{#each fishtanks}}
+  {{> fishtankCard}}
+{{/each}}
 
 </section>

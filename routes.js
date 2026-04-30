@@ -12,8 +12,13 @@ import fishtank from './controllers/fishtank.js';
 import stats from './controllers/stats.js';
 import accounts from './controllers/accounts.js';
 
-
-
+// need to fix
+function requireAuth(req, res, next) {
+  if (!req.cookies.fishtank) {
+    return res.redirect('/');
+  }
+  next();
+}
 
 
 // router.get('/', start.createView);
