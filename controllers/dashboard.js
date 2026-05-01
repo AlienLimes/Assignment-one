@@ -50,6 +50,7 @@ const dashboard = {
       const viewData = {
         title: "Fishtank App Dashboard",
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
         fishtanks: sortField ? sorted : fishtanks,
         search: searchTerm,
         titleSelected: request.query.sort === "title",
@@ -67,30 +68,6 @@ const dashboard = {
     }
   },
 
-  // addFishtank(request, response) {
-  //   const loggedInUser = accounts.getCurrentUser(request);
-  //   const timestamp = new Date();
-  //   const id = uuidv4();
-
-  //   const newFishtank = {
-  //     id: id,
-  //     userid: loggedInUser.id,
-  //     title: request.body.title,
-  //     rating: parseInt(request.body.rating),
-  //     date: timestamp,
-  //     fish: [],
-  //     cleaning: [],
-  //   };
-  //   fishStore.addFishtank(newFishtank);
-
-  //   const newCleaning = {
-  //     id: id,
-  //     cleaning: [],
-  //   };
-  //   cleanStore.addFishtank(newCleaning);
-
-  //   response.redirect('/dashboard');
-  // },
 addFishtank(request, response) {
   const loggedInUser = accounts.getCurrentUser(request);
   const timestamp = new Date();
@@ -125,12 +102,6 @@ deleteFishtank(request, response) {
   });
 },
 
-  // deleteFishtank(request, response) {
-  //   const fishtankId = request.params.id;
-  //   logger.debug(`Deleting Fishtank ${fishtankId}`);
-  //   fishStore.removeFishtank(fishtankId);
-  //   response.redirect('/dashboard');
-  // },
 
 
 };

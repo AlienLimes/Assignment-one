@@ -13,45 +13,53 @@ import stats from './controllers/stats.js';
 import accounts from './controllers/accounts.js';
 
 // need to fix
+// function requireAuth(req, res, next) {
+//   if (!req.cookies.fishtank) {
+//     return res.redirect('/');
+//   }
+//   next();
+// }
+
 function requireAuth(req, res, next) {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+  res.setHeader('Pragma', 'no-cache');
   if (!req.cookies.fishtank) {
     return res.redirect('/');
   }
   next();
 }
 
-
 // router.get('/', start.createView);
-router.get('/start', start.createView);
+router.get('/start', requireAuth, start.createView);
 
-router.get('/about', about.createView); 
-router.get('/dashboard', dashboard.createView);
-router.get('/fishtank/:id', fishtank.createView);
+router.get('/about', requireAuth, about.createView); 
+router.get('/dashboard', requireAuth, dashboard.createView);
+router.get('/fishtank/:id', requireAuth, fishtank.createView);
 
 // delete fish
-router.get('/fishtank/:id/deletefish/:fishid', fishtank.deleteFish);
+router.get('/fishtank/:id/deletefish/:fishid', requireAuth, fishtank.deleteFish);
 // delete cleaning
-router.get('/fishtank/:id/deletecleaning/:cleaningid', fishtank.deleteCleaning);
+router.get('/fishtank/:id/deletecleaning/:cleaningid', requireAuth, fishtank.deleteCleaning);
 // delete fishtank
-router.get('/dashboard/deletefishtank/:id', dashboard.deleteFishtank);
+router.get('/dashboard/deletefishtank/:id', requireAuth, dashboard.deleteFishtank);
 //statistic
-router.get('/stats', stats.createView);
+router.get('/stats', requireAuth, stats.createView);
 //search
-router.get('/searchFishtank', dashboard.createView);
+router.get('/searchFishtank', requireAuth, dashboard.createView);
 //sorting
-router.get('/sortFishtank', dashboard.createView);
+router.get('/sortFishtank', requireAuth, dashboard.createView);
 
 
 // add fish
-router.post('/fishtank/:id/addfish', fishtank.addFish);
+router.post('/fishtank/:id/addfish', requireAuth, fishtank.addFish);
 // add cleaning
-router.post('/fishtank/:id/addcleaning', fishtank.addCleaning);
+router.post('/fishtank/:id/addcleaning', requireAuth, fishtank.addCleaning);
 // add fishtank
-router.post('/dashboard/addfishtank', dashboard.addFishtank);
+router.post('/dashboard/addfishtank', requireAuth, dashboard.addFishtank);
 //edit fish
-router.post('/fishtank/:id/updatefish/:fishid', fishtank.updateFish);
+router.post('/fishtank/:id/updatefish/:fishid', requireAuth, fishtank.updateFish);
 //edit cleanig
-router.post('/fishtank/:id/updatecleaning/:cleaningid', fishtank.updateCleaning);
+router.post('/fishtank/:id/updatecleaning/:cleaningid', requireAuth, fishtank.updateCleaning);
 
 
 router.get('/', accounts.index);

@@ -24,6 +24,7 @@ const fishtank = {
       title: 'Fishtank',
       singleFishtank: fishtank,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
       currentYear: new Date().getFullYear(),
     };
 

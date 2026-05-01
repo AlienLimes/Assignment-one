@@ -39,6 +39,29 @@
     {
       "id": "37d631fb-9607-4aec-b93c-8689b1db3fee",
       "cleaning": []
+    },
+    {
+      "id": "23130371-22a5-4eea-af15-71c0b88b8147",
+      "cleaning": []
+    },
+    {
+      "id": "a41ce1b9-5ab1-45ab-8992-cad6fbf5322d",
+      "cleaning": [
+        {
+          "id": "d1397b62-1c7c-4b6b-a1f2-06d25d69f7cd",
+          "date": "2026-04-29",
+          "ammonia": "Green",
+          "tempeture": "26",
+          "phlevel": "0.5"
+        },
+        {
+          "id": "edaf02b3-e5bc-4b4f-a438-c995226f4708",
+          "date": "2026-04-27",
+          "ammonia": "Red",
+          "tempeture": "23",
+          "phlevel": "0.5"
+        }
+      ]
     }
   ]
 }

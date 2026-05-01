@@ -1,6 +1,3 @@
-
-
-
 'use strict';
 
 import logger from "../utils/logger.js";
@@ -18,8 +15,10 @@ const start = {
         title: "FishTank App",
         info: appStore.getAppInfo(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
         currentYear: new Date().getFullYear(),
       };
+      
       response.render('start', viewData);
     } else {
       response.redirect('/');

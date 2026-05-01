@@ -31,10 +31,65 @@ body {
 }
 
 .ui.centered.image {
-  border-radius: 12px;  
+  border-radius: 12px; 
+   
 }
 
 
+.title {
+  color: #ffd93d;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.title-fishtank{
+
+  color: #ffd93d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+ /* background: linear-gradient(160deg, #0942ee 50%, #1dbfbf 100%); */
+
+
+.gradient-title {
+  background: linear-gradient(to right, #ffd93d, #03b5f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+}
+
+.home-line {
+  color: rgb(3, 2, 53);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+.animated-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+
+.ui.divider {
+  border-top: 1px solid#ffd93d !important;
+  border-bottom: none !important;
+}
 
 
 
@@ -278,7 +333,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 24px;
 }
 
 .name{
@@ -290,3 +345,9 @@ table {
 }
 
 
+.profilepic {
+  padding-top: 15px;
+  padding-right: 5px;
+  line-height: 20px;
+  font-weight: bold;
+}

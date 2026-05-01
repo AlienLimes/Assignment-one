@@ -1,6 +1,14 @@
+
+
 {{> welcomemenu id="signup"}}
 
-<form class="ui stacked segment form" action="/register" method="POST">
+{{!-- <form class="ui stacked segment form" action="/register" method="POST"> --}}
+<form class="ui stacked segment form" action="/register" method="POST" enctype="multipart/form-data">
+{{#if errorMessage}}
+  <div class="ui red message">
+    {{errorMessage}}
+  </div>
+{{/if}}
   <h3 class="ui header">Register</h3>
   <div class="two fields">
     <div class="field">
@@ -20,5 +28,12 @@
     <label for="password">Password</label>
     <input type="password" name="password" required>
   </div>
+  <div class="field">
+    <label style="color: white;">Profile Picture</label>
+    <input type="file" name="picture" required>
+  </div>
   <button class="ui blue submit button">Submit</button>
 </form>
+
+  
+{{> footer}}

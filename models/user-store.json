@@ -1,25 +1,26 @@
 {
   "users": [
     {
-      "firstName": "homer",
-      "lastName": "simpson",
-      "email": "homer@simpson.com",
-      "password": "secret",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
-    },
-    {
-      "firstName": "marge",
-      "lastName": "simpson",
+      "firstName": "Marge",
+      "lastName": "Simpson",
       "email": "marge@simpson.com",
       "password": "secret",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+      "id": "e1a721bd-b4d5-4f5f-bf3c-c0e72fe53c80",
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777645198/dveaqeqvzwxdwczheee6.jpg",
+        "public_id": "dveaqeqvzwxdwczheee6"
+      }
     },
     {
-      "firstName": "Krisztina",
-      "lastName": "Molnar",
-      "email": "20111337@setu.ie",
-      "password": "maci",
-      "id": "78933561-3b2a-42da-9d15-b2d2be3fb850"
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "b67af728-18da-41d7-84f1-92bd3f8ab761",
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777646424/wcjyxwkpggsiy3mfwmc7.jpg",
+        "public_id": "wcjyxwkpggsiy3mfwmc7"
+      }
     }
   ]
 }

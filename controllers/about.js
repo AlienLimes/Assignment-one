@@ -18,6 +18,7 @@ const about = {
       const viewData = {
         title: "About Fish App",
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
         currentYear: new Date().getFullYear(),
         statistics: statistics,
       };

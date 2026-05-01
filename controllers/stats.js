@@ -54,6 +54,7 @@ const stats = {
         title: "Fishtank App Statistics",
         stats: statistics,
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
       };
 
       response.render("stats", viewData);

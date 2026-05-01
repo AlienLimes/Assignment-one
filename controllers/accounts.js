@@ -24,11 +24,7 @@ const accounts = {
     response.render('login', viewData);
   },
 
-    //logout function to render logout page
-  // logout(request, response) {
-  //   response.cookie('fishtank', '');
-  //   response.redirect('/');
-  // },
+
 
   
    logout(request, response) {
@@ -54,38 +50,18 @@ const accounts = {
     response.render('signup', viewData);
   },
 
-     //register function to render the registration page for adding a new user
-  // register(request, response) {
-  //   const user = request.body;
-  //   user.id = uuidv4();
-  //   userStore.addUser(user);
-  //   logger.info('registering ' + user.email);
-  //   response.redirect('/');
-  // },
-    register(request, response) {
-    const user = request.body;
-    user.id = uuidv4();
-    userStore.addUser(user);
-    logger.info('registering ' + user.email);
-    // login immediately
-    response.cookie('fishtank', user.email); 
-    // homepage 
-    response.redirect('/start');              
-  },
+
     
+register(request, response) {
+  const user = request.body;
+  user.id = uuidv4();
+  logger.info('registering ' + user.email);
+  userStore.addUser(user, request.files.picture, function() {
+    response.cookie('fishtank', user.email);
+    response.redirect('/start');
+  });
+},
 
-
-  // authenticate(request, response) {
-  //   const user = userStore.getUserByEmail(request.body.email);
-  //   if (user && user.password === request.body.password) {
-  //     response.cookie('fishtank', user.email);
-  //     logger.info('logging in ' + user.email);
-  //     // homepage
-  //     response.redirect('/start');
-  //   } else {
-  //     response.render('login', { title: 'Login to the Fish App', errorMessage: 'Invalid Authentication' });
-  //   }
-  // },
 
     authenticate(request, response) {
   const user = userStore.getUserByEmail(request.body.email);

@@ -3,7 +3,14 @@
   <header class="ui header item"> <a href="/start"> Fish App </a> </header>
   
   <div class="right menu">
-    <!--     Add links to your pages here -->
+    {{#if picture}}
+  <span class="profilepic">
+    <img src="{{picture.url}}" class="ui avatar image">
+  </span>
+{{/if}}
+
+
+
           <span class="name">{{fullname}}</span>
         <a id="home" class="item" href="/start">Home</a>
         <a id="dashboard" class="item" href="/dashboard">Dashboard</a>
