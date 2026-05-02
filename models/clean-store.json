@@ -48,18 +48,39 @@
       "id": "a41ce1b9-5ab1-45ab-8992-cad6fbf5322d",
       "cleaning": [
         {
-          "id": "d1397b62-1c7c-4b6b-a1f2-06d25d69f7cd",
-          "date": "2026-04-29",
-          "ammonia": "Green",
+          "id": "d2f94f0e-1bd6-4dfc-b669-96616ea67870",
+          "date": "2026-05-01",
+          "ammonia": "0",
           "tempeture": "26",
           "phlevel": "0.5"
         },
         {
-          "id": "edaf02b3-e5bc-4b4f-a438-c995226f4708",
+          "id": "ac181955-7999-449f-acd3-16d567e668d3",
           "date": "2026-04-27",
-          "ammonia": "Red",
-          "tempeture": "23",
-          "phlevel": "0.5"
+          "ammonia": "0",
+          "tempeture": "0.3",
+          "phlevel": "0.3"
+        },
+        {
+          "id": "f1003143-2a50-4c2b-85ff-b73224f9a38e",
+          "date": "2026-04-29",
+          "ammonia": "0.26-plus",
+          "tempeture": "0.5",
+          "phlevel": "0.4"
+        },
+        {
+          "id": "a18b8fe4-af9d-428b-aa32-c4d13c70faab",
+          "date": "2026-04-28",
+          "ammonia": "0.1-0.25",
+          "tempeture": "0.3",
+          "phlevel": "0.4"
+        },
+        {
+          "id": "a5398244-dbbd-45ec-8b88-afffab2631dc",
+          "date": "2026-04-29",
+          "ammonia": "0.1-0.25",
+          "tempeture": "0.5",
+          "phlevel": "0.4"
         }
       ]
     }

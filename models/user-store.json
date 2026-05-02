@@ -21,6 +21,17 @@
         "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777646424/wcjyxwkpggsiy3mfwmc7.jpg",
         "public_id": "wcjyxwkpggsiy3mfwmc7"
       }
+    },
+    {
+      "firstName": "Tibor",
+      "lastName": "Molnar",
+      "email": "csibman@hotmail.com",
+      "password": "1234",
+      "id": "4ae5a526-3c71-4e08-bf72-a3ee2797651a",
+      "picture": {
+        "url": "http://res.cloudinary.com/dn5jtpf74/image/upload/v1777647373/m24g2y01tc3tizxmclkl.png",
+        "public_id": "m24g2y01tc3tizxmclkl"
+      }
     }
   ]
 }

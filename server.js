@@ -19,6 +19,12 @@ app.use(fileUpload({useTempFiles: true}));
 
 
 
+
+
+
+
+
+
 const handlebars = create({
   extname: '.hbs', 
     helpers: {
@@ -43,7 +49,26 @@ const handlebars = create({
 },
 
 
+// Extra helper function
+
+
+// Helper to show colored status
+ammoniaHelper: function(value) {
+    if (value === '0') return '<span class="ui green label">0 (Safe)</span>';
+    if (value === '0.1-0.25') return '<span class="ui orange label">0.1 - 0.25 (Warning)</span>';
+    if (value === '0.26-plus') return '<span class="ui red label">0.26+ (Danger)</span>';
+    return value;
+},
+
+//  Equality function
+eq: function(a, b) {
+    return a == b;  
+},
+
+
     },
+
+
 });
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");

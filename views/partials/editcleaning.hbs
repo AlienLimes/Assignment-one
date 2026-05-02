@@ -7,13 +7,33 @@
           value="{{date}}">
       </span>
     </td>
-    <td>
+    {{!-- <td>
       <span class="ui input">
         <input type="text" name="ammonia" required
           title="Please include a valid Ammonia Level"
           placeholder="Ammonia Level" value="{{ammonia}}">
       </span>
-    </td>
+    </td> --}}
+
+    {{!-- Custom helper used --}}
+    {{!-- <td>
+      <select name="ammonia" required>
+        <option value="0" {{#if (eq ammonia "0")}}selected{{/if}}>0 (Safe)</option>
+        <option value="0.1-0.25" {{#if (eq ammonia "0.1-0.25")}}selected{{/if}}>0.1 - 0.25 (Warning)</option>
+        <option value="0.26-plus" {{#if (eq ammonia "0.26-plus")}}selected{{/if}}>0.26+ (Danger)</option>
+      </select>
+    </td> --}}
+
+<td>
+  <span class="ui input">
+    <select name="ammonia" required class="ui dropdown">
+      <option value="0" {{#if (eq ammonia "0")}}selected{{/if}}>0 (Safe)</option>
+      <option value="0.1-0.25" {{#if (eq ammonia "0.1-0.25")}}selected{{/if}}>0.1 - 0.25 (Warning)</option>
+      <option value="0.26-plus" {{#if (eq ammonia "0.26-plus")}}selected{{/if}}>0.26+ (Danger)</option>
+    </select>
+  </span>
+</td>
+
     <td>
       <span class="ui input">
         <input type="number" step="0.1" name="tempeture" required

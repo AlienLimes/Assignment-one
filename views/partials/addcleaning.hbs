@@ -4,10 +4,22 @@
       <label>Cleaning Date</label>
       <input type="date" name="date" required title="Please include a valid Date" placeholder="Cleaning Date">
     </div>
-    <div class="field">
+    {{!-- <div class="field">
       <label>Ammonia Level</label>
       <input type="text" name="ammonia" required title="Please include a valid Ammonia Level" placeholder="Ammonia Level">
-    </div>
+    </div> --}}
+
+    <div class="field">
+  <label>Ammonia Level</label>
+  <select name="ammonia" required title="Please include a valid Ammonia Level" >
+    <option value="0">0</option>
+    <option value="0.1-0.25">0.1 - 0.25</option>
+    <option value="0.26-plus">0.26+</option>
+  </select>
+</div>
+
+
+
     <div class="field">
       <label>Temperature</label>
       <input type="number" step="0.1" name="tempeture" required title="Please include a valid Temperature" placeholder="Temperature">
