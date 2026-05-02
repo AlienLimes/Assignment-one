@@ -23,8 +23,13 @@ So far the application only reads data from a static json file.
   - Highest rated fishtanks and average rating
 - **Dashboard Search** - Search fishtanks by title
 - **Dashboard Sorting** - Sort fishtanks by title or rating in ascending or descending order
-- **Dashboard Add Fishtank** - Image upload functionality
+- **Dashboard Add Fishtank** - Image upload functionality to fishtank
 - **Active Nav Highlighting** - Navigation highlights the current page
+- **Custum Helper and handlebar** - Extra custom Helper for ammonia level
+- **User profile picture** - User name with profile picture on every page
+- **updated authentication** - Invalid login message
+- **Updated Logout** - On log out cookies drops, no reverse to the previous page
+- **Updated authentication view** - login, signup page, new buttons and welcome picture
 
 
 
